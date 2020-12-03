@@ -20,6 +20,8 @@ This knowledge and methodological gap does not hinder experimentation and innova
 
 ![alt text](other/bcn_superblocks_rueda_2018.png "Barcelona Superblocks schema (Rueda, 2018)")
 
+<span class="caption">Barcelona Superblocks schema (Rueda, 2018).</span>
+
 ### The Braess Paradox
 Among one of the most interesting and intriguing effects that defies the common understanding for operating in the urban infrastructures is the so-called Braess Paradox. It explains the counter-intuitive observation that adding more links to a given network, such as a transportation one, can slow down overall traffic flow. It is caused by the selfishly behavior of the entities that are moving in the network when trying to optimize individually their travel time (or cost). It causes to get away from the system optimum. that contrary to the real behavior, requires some level of collaboration between the agents(***cite Braess original paper***).
 
