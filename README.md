@@ -61,7 +61,10 @@ In order to build a simulation in SUMO, two basic elements are needed as initial
 
 The idea behind the used environment is to generalize and abstract the main features defining the regular urban grid of the Barcelona Eixample district. Any particular area of the city of Barcelona is modeled *per se*, but just a representation of the most important features of the urban fabric. This is facilitated by the clear and straightforward ideas that back the Cerda's plan.
 
-An area of 9x9 Barcelona's blocks is used as the base. It is equivalent roughly to 1.44km^2. 
+An area of 9x9 Barcelona's blocks is used as the base. It is equivalent roughly to 1.44km<sup>2</sup>. Each squared block (or if preferred, the distance between the center of the streets intersections) is 133.33 m long. All the streets have the same width and importance (i.e. there is no hierarchy in the urban fabric) and they are one-way, two-lanes, with opposing directions from one block to the following one. Additionally each intersection is regulated with traffic lights whose whole cycle last 90 seconds.
+
+This basic network with the aforementioned parameters represents an idealization or abstraction of the current functioning of the street network in Barcelona (net 1). It is used as the basis for the modified scenarios where different changes are introduced as follows.
+
 
 
 
