@@ -70,7 +70,7 @@ Two different settings for superblocks are represented: one made of 2x2 superblo
 Finally, a fourth network is included to account for a remarkable feature of the Barcelona grid: the number of diagonal streets that cut the orthogonal grid. For this purpose, the Diagonal Avenue is taken as a reference for capturing its main features to be added to the basic grid. As a result, a diagonal broad street with two-ways and two lanes per direction is added at and angle of 30°. This is net 4.
 
 <div align="center">
-	<img src="other/bcn_paradox_4nets.png" />
+	<img src="other/bcn_paradox_4nets.PNG" />
 	<span class="caption">From left to right: Net 1 (basic network), net 2 (2x2 superblocks), net 3 (3x3 superblocks), and net 4 (with diagonal broad avenue).</span>
 </div>
 
