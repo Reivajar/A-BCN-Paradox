@@ -54,8 +54,14 @@ Additionally, this framework allows to run mesoscopic simulations based on a que
 *(Define dependent and independent variables you want to study. Say how you want to measure them.) (Why is your model a good abtraction of the problem you want to study?) (Are you capturing all the relevant aspects of the problem?)*
 
 In order to build a simulation in SUMO, two basic elements are needed as initial inputs:
-* A network, as the representation of the 'physical' environment where agents will move.
-* A demand able to generate the movement between the different locations of the environment.
+* A **network**, as the representation of the 'physical' environment where agents will move.
+* A **demand** able to generate the movement between the different locations of the environment.
+
+### Network
+
+The idea behind the used environment is to generalize and abstract the main features defining the regular urban grid of the Barcelona Eixample district. Any particular area of the city of Barcelona is modeled *per se*, but just a representation of the most important features of the urban fabric. This is facilitated by the clear and straightforward ideas that back the Cerda's plan.
+
+An area of 9x9 Barcelona's blocks is used as the base. It is equivalent roughly to 1.44km^2. 
 
 
 
