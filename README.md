@@ -19,8 +19,8 @@ The understanding of complex effects of spatial planning decisions in cities is 
 This knowledge and methodological gap does not hinder experimentation and innovation in the most complex human creation (citation here) as cities are. In recent years, there is a clear trend on reducing the space reserved for private motor vehicles in cities to improve air quality and environmental conditions, to foster alternative transportation modes, or to reduce the use of fossil fuels (***citations would be good here*** and as well ***examples of these interventions***). Among these current trends on urban planning, Barcelona's Superblocks has been one of the most published in the last years (***some refs from The Guardian, NYT, etc***). The Superblock's plan aims to reduce the space for the motor private vehicles in the street network to improve living conditions of city inhabitants by reducing noise and air-pollution and giving room to other transportation modes. It is being accomplished by creating large blocks of 3-by-3 of current square city blocks and leaving inside only loop-like residential streets. It means that 1 out of 3 streets of the city are left for driving through traffic. The well-known and a-thousands-of-times depicted idiosyncrasy of the so regular Barcelona grid comes together with a long tradition on public engagement on urban planning and experimentation in the city set an ideal scenario for testing out the unknown effect of these and other modifications in urban networks.
 
 <div align="center">
-![alt text](other/bcn_superblocks_rueda_2018.png "Barcelona Superblocks schema (Rueda, 2018)")
-<span class="caption">Barcelona Superblocks schema (Rueda, 2018).</span>
+	<img src="other/bcn_superblocks_rueda_2018.png" />
+	<span class="caption">Barcelona Superblocks schema (Rueda, 2018).</span>
 </div>
 
 ### The Braess Paradox
