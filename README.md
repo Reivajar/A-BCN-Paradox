@@ -1,5 +1,4 @@
-# Agent-Based Modeling and Social System Simulation 2020
-(text between brackets to be removed)
+# Agent-Based Modeling and Social System Simulation 2020. *A Barcelona Paradox*
 
 > * Group Name: **SOS** (**S**ub**O**ptimal **S**olutions)
 > * Group participants names: Argota Sanchez-Vaquerizo, Javier & Schwarzenbach, Daniel 
@@ -7,9 +6,11 @@
 
 ## General Introduction
 
-(States your motivation clearly: why is it important / interesting to solve this problem?)
+*(States your motivation clearly: why is it important / interesting to solve this problem?)
 (Add real-world examples, if any)
-(Put the problem into a historical context, from what does it originate? Are there already some proposed solutions?)
+(Put the problem into a historical context, from what does it originate? Are there already some proposed solutions?)*
+
+Utilitarian traffic optimization goals has dominated transport engineering since it appears as a proper discipline with the rise of private motorized vehicles. It has shaped our industrial and post-industrial cities that we inhabit. Even though modern urbanism roots its origin at a very scientific and technical approach towards the urban environment and the efficient distribution of people, good and resources around the city (*see Cerda*), and Modernis urban planners and architectects endorsed a radical mechanistic understanding of cities (*see Chart of Athens/CIAM*), this scientific and positivist approach of traffic engineers contradcicts the common practise in urban and city planning. Spatial planning, urban design, and collateral disciplines in the same realm 
 
 ## The Model
 
