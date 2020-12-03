@@ -74,6 +74,17 @@ Finally, a fourth network is included to account for a remarkable feature of the
 	<span class="caption">From left to right: Net 1 (basic network), net 2 (2x2 superblocks), net 3 (3x3 superblocks), and net 4 (with diagonal broad avenue).</span>
 </div>
 
+| Net | Net 1 | Net 2 | Net 3 | Net 4 |
+|-|-|-|-|-|
+| Description | Basic | 2x2 superblocks | 3x3 superblocks | With diagonal avenue |
+| Length of lanes (m) | 53920 | 36588 | 34261 | 58919 |
+| Length of lanes (%) | 100 | 68 | 64 | 109 |
+| Number of intersections | 100 | 25 | 16 | 105 |
+
+<div align="center">
+	<span class="caption">Main metrics for each network.</span>
+</div>
+
 ### Demand
 
 
