@@ -1,9 +1,9 @@
-# Agent-Based Modeling and Social System Simulation 2019 (Template)
+# Agent-Based Modeling and Social System Simulation 2020
 (text between brackets to be removed)
 
-> * Group Name: (be creative!)
-> * Group participants names: (alphabetically sorted by last name)
-> * Project Title: (can be changed later)
+> * Group Name: **SOS** (**S**ub**O**ptimal **S**olutions)
+> * Group participants names: Argota Sanchez-Vaquerizo, Javier & Schwarzenbach, Daniel 
+> * Project Title: Suboptimal Traffic Efficiency in Changing Habitats (SOTECH). *A Barcelona Paradox*
 
 ## General Introduction
 
