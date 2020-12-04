@@ -96,6 +96,31 @@ In general, the regular grid of the city of Barcelona encompasses core urban dis
 
 Very similarly to the network creation process, we generalize the transportation demand for an equivalent area of the city to the modeled 1.44km<sup>2</sup> urban square without representing any concrete neighborhood of the city of Barcelona.
 
+In the case of the transport demand created by *activitygen*, it needs basic demographic data which is extrapolated and generalized for the modeled network area (1.44km<sup>2</sup>) based on the Eixample district in Barcelona (7.46km<sup>2</sup>) (***sources of data for the city council of BCN***). This area matches approximately the assumption of the expected mobility intensity for a central part of Barcelona. As a result, the following population statistics are assumed for the modeled area:
+
+- 51.120 inhabitant in the area (355 hab/ha x 144 ha)
+- 2,4 persons per household
+- Population < 16 yo: 14%
+- Population 16 - 64 yo: 65%
+- Population > 64 yo: 21%
+- Schools (for the whole district): 58 (including primary, middle and high schools, private and public ones). 
+- Total students 3-16 yo: 24000. Around 70% stays in the same district, and 30% move in between districts or municipalities. For the scope of this simulated area, 4800 students are considered (20%).
+- Vehicles per 1000 inhabitants: 298.
+- Share of private vehicle in Barcelona: 22.8%
+
+For generalizing the driving-through traffic three neighborhoods belonging to the Eixample district are chosen as a reference for their inbound and outbound mobility patterns (i.e. people who leave or enter the area in a daily basis) (***ref Bestiario***. They are the ones showing a more more complex and demanding dynamics: La Dreta de l'Eixample, l'Antiga Esquerra de l'Eixample, and la Nova Esquerra de l'Eixample.
+
+| Neighborhood                    | **Dreta de l'Eixample** | **L'Antiga Esquerra de l'Eixample** | **La Nova Esquerra de l'Eixample** |
+|---------------------------------|-------------------------|-------------------------------------|------------------------------------|
+| Total population                | 43449                   | 42189                               | 57889                              |
+| Area (km<sup>2</sup>)           | 2.12                    | 1.23                                | 1.34                               |
+| Density (hab/km<sup>2</sup>)    | 20500                   | 34355                               | 43200                              |
+| Outbound mobility (% tot. pop.) | 30                      | 32                                  | 32                                 |
+| Inbound mobility (% tot. pop.)  | 138                     | 66                                  | 32                                 |
+
+Averaging these external mobility patterns, we can assume for the model:
+- Outbound mobility: 31.4% of tot. population of the model
+- Inbound mobility: 74% of tot. population of the model
 
 ## Expected Results
 
