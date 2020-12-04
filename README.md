@@ -118,9 +118,15 @@ For generalizing the driving-through traffic three neighborhoods belonging to th
 | Outbound mobility (% tot. pop.) | 30                      | 32                                  | 32                                 |
 | Inbound mobility (% tot. pop.)  | 138                     | 66                                  | 32                                 |
 
-Averaging these external mobility patterns, we can assume for the model:
+Averaging these mobility patterns, we can assume for the model:
 - Outbound mobility: 31.4% of tot. population of the model
 - Inbound mobility: 74% of tot. population of the model
+
+Finally, these total daily values can be adjusted to an hourly distribution of trips during the day for generating random trips between the fringe edges (i.e. streets situated on the limit of the network that are used for entering and exiting the model).
+
+As a result, a total of 315000 vehicles are included into the simulation by adding the vehicles from the endogenous demand and the driving through traffic.
+
+The initial validation of this demand modeling is performed immediately by comparing the outcomes of the hourly histogram of modeled trips to the measured total trips by the metropolitan authorities in Barcelona (***ref 1***) and the expected counting of vehicles in a similar area from the real AADT (***ref 2***).
 
 ## Expected Results
 
