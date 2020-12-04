@@ -61,7 +61,7 @@ In order to build a simulation in SUMO, two basic elements are needed as initial
 
 The idea behind the used environment is to generalize and abstract the main features defining the regular urban grid of the Barcelona Eixample district. Any particular area of the city of Barcelona is modeled *per se*, but just a representation of the most important features of the urban fabric. This is facilitated by the clear and straightforward ideas that back the Cerda's plan.
 
-An area of 9x9 Barcelona's blocks is used as the base. It is equivalent roughly to 1.44km<sup>2</sup>. Each squared block (or if preferred, the distance between the center of the streets intersections) is 133.33 m long. All the streets have the same width and importance (i.e. there is no hierarchy in the urban fabric) and they are one-way, two-lanes, with opposing directions from one block to the following one. Additionally each intersection is regulated with traffic lights whose whole cycle last 90 seconds.
+An section of the city made of 9x9 Barcelona's blocks is used as the base environment. It is equivalent roughly to 1.44km<sup>2</sup>. Each squared block (or if preferred, the distance between the center of the streets intersections) is 133.33 m long. All the streets have the same width and importance (i.e. there is no hierarchy in the urban fabric) and they are one-way, two-lanes, with opposing directions from one block to the following one. Additionally each intersection is regulated with traffic lights whose whole cycle last 90 seconds.
 
 This basic network with the aforementioned parameters represents an idealization or abstraction of the current functioning of the street network in Barcelona (net 1). It is used as the basis for the modified scenarios where different changes are introduced as follows.
 
@@ -74,18 +74,27 @@ Finally, a fourth network is included to account for a remarkable feature of the
 	<span class="caption">From left to right: Net 1 (basic network), net 2 (2x2 superblocks), net 3 (3x3 superblocks), and net 4 (with diagonal broad avenue).</span>
 </div>
 
-| Net                     | Net 1 | Net 2           | Net 3           | Net 4                |
-|-------------------------|-------|-----------------|-----------------|----------------------|
-| Description             | Basic | 2x2 superblocks | 3x3 superblocks | With diagonal avenue |
-| Length of lanes (m)     | 53920 | 36588           | 34261           | 58919                |
-| Length of lanes (%)     | 100   | 68              | 64              | 109                  |
-| Number of intersections | 100   | 25              | 16              | 105                  |
+
+| Net                     | Net 1         | Net 2           | Net 3           | Net 4              |
+|-------------------------|---------------|-----------------|-----------------|--------------------|
+| Description             | Basic network | 2x2 superblocks | 3x3 superblocks | w/ diagonal avenue |
+| Length of lanes (m)     | 53920         | 36588           | 34261           | 58919              |
+| Length of lanes (%)     | 100           | 68              | 64              | 109                |
+| Number of intersections | 100           | 25              | 16              | 105                |
 
 <div align="center">
 	<span class="caption">Main metrics for each network.</span>
 </div>
 
 ### Demand
+
+For the creation of the demand, two different kinds of mobility need to be considered:
+* People whose origin and/or destination is within the represented area (i.e. people living and/or working within the network). This *endogenous* demand can be created using the activitygen routine included in SUMO (***SUMO ref activity gen***) from general demographic data.
+* People exclusively crossing the modeled area (i.e. people who are moving around the city, whose destination is somewhere else out of the represented part of the city). This passing through traffic can be modeled from AADT available data.
+
+In general, the regular grid of the city of Barcelona encompasses core urban districts and more residential, suburbial, and even industrial areas whose traffic demands vary largely. In this case, for the considered area, we are assuming that it belongs to a central part of the city which implied higher density of population, of economic activity, of jobs position, and in general of traffic levels (because of inner demand, and passing by population).
+
+Very similarly to the network creation process, we generalize the transportation demand for an equivalent area of the city to the modeled 1.44km<sup>2</sup> urban square without representing any concrete neighborhood of the city of Barcelona.
 
 
 ## Expected Results
