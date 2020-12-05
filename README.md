@@ -110,6 +110,10 @@ For generalizing the driving-through traffic three neighborhoods belonging to th
 | Outbound mobility (% tot. pop.) | 30                      | 32                                  | 32                                 |
 | Inbound mobility (% tot. pop.)  | 138                     | 66                                  | 32                                 |
 
+<div align="center">
+	<span class="caption">Demographic and mobility data for reference neighborhood.</span>
+</div>
+
 Averaging these mobility patterns, we can assume for the model:
 - Outbound mobility: 31.4% of tot. population of the model
 - Inbound mobility: 74% of tot. population of the model
