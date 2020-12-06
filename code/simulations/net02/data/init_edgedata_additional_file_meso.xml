@@ -1,0 +1,9 @@
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+
+    <edgeData id="aadt" file="results_meso/edgedata_aadt_output.xml" />
+    <edgeData id="aadt" freq="60" file="results_meso/edgedata_aadt_output_freq60s.xml" />
+    <edgeData id="emmisions" type="emissions" file="results_meso/edgedata_emissions_output.xml"/>
+    <edgeData id="emmisions" freq="60" type="emissions" file="results_meso/edgedata_emissions_output_freq60s.xml"/>
+    <!--<edgeData id="ped" detectPersons="walk" file="results/edgedata_ped_output.xml"/>-->
+
+</additional>
