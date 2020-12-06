@@ -1,0 +1,509 @@
+<city>
+        <general inhabitants="51120" households="21300" childrenAgeLimit="16" retirementAgeLimit="65" carRate="0.25" unemploymentRate="0.07"
+                     footDistanceLimit="1200" incomingTraffic="37829" outgoingTraffic="16052" />
+        <parameters carPreference="0.228" meanTimePerKmInCity="240" freeTimeActivityRate="0.15" uniformRandomTraffic="0.05" departureVariation="7200" />
+
+        <population>
+            <bracket beginAge="0" endAge="15" peopleNbr="14" />
+            <bracket beginAge="16" endAge="64" peopleNbr="65" />
+            <bracket beginAge="65" endAge="90" peopleNbr="21" />
+        </population>
+
+        <workHours>
+            <opening hour="28800" proportion="0.20" /> <!--8:00am-->
+            <opening hour="30600" proportion="0.20" /> <!--8:30am-->
+            <opening hour="32400" proportion="0.40" /> <!--9:00am-->
+            <opening hour="34200" proportion="0.20" /> <!--9:30am-->
+            <closing hour="43200" proportion="0.10" /> <!--12:00pm-->
+            <closing hour="50400" proportion="0.25" /> <!--14:00pm-->
+            <opening hour="52200" proportion="0.15" /> <!--14:30pm-->
+            <opening hour="54000" proportion="0.10" /> <!--15:00pm-->
+            <closing hour="63000" proportion="0.20" /> <!--17:30pm-->
+            <closing hour="64800" proportion="0.40" /> <!--18:00am-->
+            <closing hour="68400" proportion="0.30" /> <!--19:00am-->
+        </workHours>
+
+        <streets>
+            <street edge="A1B1" population="0" workPosition="0" />
+            <street edge="A2B2" population="0" workPosition="0" />
+            <street edge="A3B3" population="0" workPosition="0" />
+            <street edge="A4B4" population="0" workPosition="0" />
+            <street edge="A5B5" population="0" workPosition="0" />
+            <street edge="A6B6" population="0" workPosition="0" />
+            <street edge="A7B7" population="0" workPosition="0" />
+            <street edge="A8B8" population="0" workPosition="0" />
+            <street edge="A9B9" population="0" workPosition="0" />
+            <street edge="A10B10" population="0" workPosition="0" />
+            <street edge="B0B1" population="0" workPosition="0" />
+            <street edge="B1B2" population="0" workPosition="0" />
+            <street edge="B1B0" population="50" workPosition="50" />
+            <street edge="B1C1" population="50" workPosition="50" />
+            <street edge="B1A1" population="0" workPosition="0" />
+            <street edge="B2B3" population="0" workPosition="0" />
+            <street edge="B2B1" population="50" workPosition="50" />
+            <street edge="B2C2" population="50" workPosition="50" />
+            <street edge="B2A2" population="0" workPosition="0" />
+            <street edge="B3B4" population="0" workPosition="0" />
+            <street edge="B3B2" population="50" workPosition="50" />
+            <street edge="B3C3" population="50" workPosition="50" />
+            <street edge="B3A3" population="0" workPosition="0" />
+            <street edge="B4B5" population="0" workPosition="0" />
+            <street edge="B4B3" population="50" workPosition="50" />
+            <street edge="B4C4" population="50" workPosition="50" />
+            <street edge="B4A4" population="0" workPosition="0" />
+            <street edge="B5B6" population="0" workPosition="0" />
+            <street edge="B5B4" population="50" workPosition="50" />
+            <street edge="B5C5" population="50" workPosition="50" />
+            <street edge="B5A5" population="0" workPosition="0" />
+            <street edge="B6B7" population="0" workPosition="0" />
+            <street edge="B6B5" population="50" workPosition="50" />
+            <street edge="B6C6" population="50" workPosition="50" />
+            <street edge="B6A6" population="0" workPosition="0" />
+            <street edge="B7B8" population="0" workPosition="0" />
+            <street edge="B7B6" population="50" workPosition="50" />
+            <street edge="B7C7" population="50" workPosition="50" />
+            <street edge="B7A7" population="0" workPosition="0" />
+            <street edge="B8B9" population="0" workPosition="0" />
+            <street edge="B8B7" population="50" workPosition="50" />
+            <street edge="B8C8" population="50" workPosition="50" />
+            <street edge="B8A8" population="0" workPosition="0" />
+            <street edge="B9B10" population="50" workPosition="50" />
+            <street edge="B9B8" population="50" workPosition="50" />
+            <street edge="B9C9" population="50" workPosition="50" />
+            <street edge="B9A9" population="0" workPosition="0" />
+            <street edge="B10B11" population="50" workPosition="50" />
+            <street edge="B10B9" population="50" workPosition="50" />
+            <street edge="B10C10" population="50" workPosition="50" />
+            <street edge="B10A10" population="50" workPosition="50" />
+            <street edge="B11B10" population="50" workPosition="50" />
+            <street edge="C0C1" population="50" workPosition="50" />
+            <street edge="C1C2" population="50" workPosition="50" />
+            <street edge="C1C0" population="0" workPosition="0" />
+            <street edge="C1D1" population="50" workPosition="50" />
+            <street edge="C1B1" population="50" workPosition="50" />
+            <street edge="C2C3" population="50" workPosition="50" />
+            <street edge="C2C1" population="0" workPosition="0" />
+            <street edge="C2D2" population="50" workPosition="50" />
+            <street edge="C2B2" population="50" workPosition="50" />
+            <street edge="C3C4" population="50" workPosition="50" />
+            <street edge="C3C2" population="0" workPosition="0" />
+            <street edge="C3D3" population="50" workPosition="50" />
+            <street edge="C3B3" population="50" workPosition="50" />
+            <street edge="C4C5" population="50" workPosition="50" />
+            <street edge="C4C3" population="0" workPosition="0" />
+            <street edge="C4D4" population="50" workPosition="50" />
+            <street edge="C4B4" population="50" workPosition="50" />
+            <street edge="C5C6" population="50" workPosition="50" />
+            <street edge="C5C4" population="0" workPosition="0" />
+            <street edge="C5D5" population="50" workPosition="50" />
+            <street edge="C5B5" population="50" workPosition="50" />
+            <street edge="C6C7" population="50" workPosition="50" />
+            <street edge="C6C5" population="0" workPosition="0" />
+            <street edge="C6D6" population="50" workPosition="50" />
+            <street edge="C6B6" population="50" workPosition="50" />
+            <street edge="C7C8" population="50" workPosition="50" />
+            <street edge="C7C6" population="0" workPosition="0" />
+            <street edge="C7D7" population="50" workPosition="50" />
+            <street edge="C7B7" population="50" workPosition="50" />
+            <street edge="C8C9" population="50" workPosition="50" />
+            <street edge="C8C7" population="0" workPosition="0" />
+            <street edge="C8D8" population="50" workPosition="50" />
+            <street edge="C8B8" population="50" workPosition="50" />
+            <street edge="C9C10" population="0" workPosition="0" />
+            <street edge="C9C8" population="0" workPosition="0" />
+            <street edge="C9D9" population="50" workPosition="50" />
+            <street edge="C9B9" population="50" workPosition="50" />
+            <street edge="C10C11" population="50" workPosition="50" />
+            <street edge="C10C9" population="50" workPosition="50" />
+            <street edge="C10D10" population="50" workPosition="50" />
+            <street edge="C10B10" population="50" workPosition="50" />
+            <street edge="C11C10" population="50" workPosition="50" />
+            <street edge="D0D1" population="0" workPosition="0" />
+            <street edge="D1D2" population="0" workPosition="0" />
+            <street edge="D1D0" population="50" workPosition="50" />
+            <street edge="D1E1" population="50" workPosition="50" />
+            <street edge="D1C1" population="50" workPosition="50" />
+            <street edge="D2D3" population="0" workPosition="0" />
+            <street edge="D2D1" population="50" workPosition="50" />
+            <street edge="D2E2" population="50" workPosition="50" />
+            <street edge="D2C2" population="50" workPosition="50" />
+            <street edge="D3D4" population="0" workPosition="0" />
+            <street edge="D3D2" population="50" workPosition="50" />
+            <street edge="D3E3" population="50" workPosition="50" />
+            <street edge="D3C3" population="50" workPosition="50" />
+            <street edge="D4D5" population="0" workPosition="0" />
+            <street edge="D4D3" population="50" workPosition="50" />
+            <street edge="D4E4" population="50" workPosition="50" />
+            <street edge="D4C4" population="50" workPosition="50" />
+            <street edge="D5D6" population="0" workPosition="0" />
+            <street edge="D5D4" population="50" workPosition="50" />
+            <street edge="D5E5" population="50" workPosition="50" />
+            <street edge="D5C5" population="50" workPosition="50" />
+            <street edge="D6D7" population="0" workPosition="0" />
+            <street edge="D6D5" population="50" workPosition="50" />
+            <street edge="D6E6" population="50" workPosition="50" />
+            <street edge="D6C6" population="50" workPosition="50" />
+            <street edge="D7D8" population="0" workPosition="0" />
+            <street edge="D7D6" population="50" workPosition="50" />
+            <street edge="D7E7" population="50" workPosition="50" />
+            <street edge="D7C7" population="50" workPosition="50" />
+            <street edge="D8D9" population="0" workPosition="0" />
+            <street edge="D8D7" population="50" workPosition="50" />
+            <street edge="D8E8" population="50" workPosition="50" />
+            <street edge="D8C8" population="50" workPosition="50" />
+            <street edge="D9D10" population="50" workPosition="50" />
+            <street edge="D9D8" population="50" workPosition="50" />
+            <street edge="D9E9" population="50" workPosition="50" />
+            <street edge="D9C9" population="50" workPosition="50" />
+            <street edge="D10D11" population="50" workPosition="50" />
+            <street edge="D10D9" population="50" workPosition="50" />
+            <street edge="D10E10" population="50" workPosition="50" />
+            <street edge="D10C10" population="50" workPosition="50" />
+            <street edge="D11D10" population="50" workPosition="50" />
+            <street edge="E0E1" population="50" workPosition="50" />
+            <street edge="E1E2" population="50" workPosition="50" />
+            <street edge="E1E0" population="0" workPosition="0" />
+            <street edge="E1F1" population="50" workPosition="50" />
+            <street edge="E1D1" population="50" workPosition="50" />
+            <street edge="E2E3" population="50" workPosition="50" />
+            <street edge="E2E1" population="0" workPosition="0" />
+            <street edge="E2F2" population="50" workPosition="50" />
+            <street edge="E2D2" population="50" workPosition="50" />
+            <street edge="E3E4" population="50" workPosition="50" />
+            <street edge="E3E2" population="0" workPosition="0" />
+            <street edge="E3F3" population="50" workPosition="50" />
+            <street edge="E3D3" population="50" workPosition="50" />
+            <street edge="E4E5" population="50" workPosition="50" />
+            <street edge="E4E3" population="0" workPosition="0" />
+            <street edge="E4F4" population="50" workPosition="50" />
+            <street edge="E4D4" population="50" workPosition="50" />
+            <street edge="E5E6" population="50" workPosition="50" />
+            <street edge="E5E4" population="0" workPosition="0" />
+            <street edge="E5F5" population="50" workPosition="50" />
+            <street edge="E5D5" population="50" workPosition="50" />
+            <street edge="E6E7" population="50" workPosition="50" />
+            <street edge="E6E5" population="0" workPosition="0" />
+            <street edge="E6F6" population="50" workPosition="50" />
+            <street edge="E6D6" population="50" workPosition="50" />
+            <street edge="E7E8" population="50" workPosition="50" />
+            <street edge="E7E6" population="0" workPosition="0" />
+            <street edge="E7F7" population="50" workPosition="50" />
+            <street edge="E7D7" population="50" workPosition="50" />
+            <street edge="E8E9" population="50" workPosition="50" />
+            <street edge="E8E7" population="0" workPosition="0" />
+            <street edge="E8F8" population="50" workPosition="50" />
+            <street edge="E8D8" population="50" workPosition="50" />
+            <street edge="E9E10" population="0" workPosition="0" />
+            <street edge="E9E8" population="0" workPosition="0" />
+            <street edge="E9F9" population="50" workPosition="50" />
+            <street edge="E9D9" population="50" workPosition="50" />
+            <street edge="E10E11" population="50" workPosition="50" />
+            <street edge="E10E9" population="50" workPosition="50" />
+            <street edge="E10F10" population="50" workPosition="50" />
+            <street edge="E10D10" population="50" workPosition="50" />
+            <street edge="E11E10" population="50" workPosition="50" />
+            <street edge="F0F1" population="0" workPosition="0" />
+            <street edge="F1F2" population="0" workPosition="0" />
+            <street edge="F1F0" population="50" workPosition="50" />
+            <street edge="F1G1" population="50" workPosition="50" />
+            <street edge="F1E1" population="50" workPosition="50" />
+            <street edge="F2F3" population="0" workPosition="0" />
+            <street edge="F2F1" population="50" workPosition="50" />
+            <street edge="F2G2" population="50" workPosition="50" />
+            <street edge="F2E2" population="50" workPosition="50" />
+            <street edge="F3F4" population="0" workPosition="0" />
+            <street edge="F3F2" population="50" workPosition="50" />
+            <street edge="F3G3" population="50" workPosition="50" />
+            <street edge="F3E3" population="50" workPosition="50" />
+            <street edge="F4F5" population="0" workPosition="0" />
+            <street edge="F4F3" population="50" workPosition="50" />
+            <street edge="F4G4" population="50" workPosition="50" />
+            <street edge="F4E4" population="50" workPosition="50" />
+            <street edge="F5F6" population="0" workPosition="0" />
+            <street edge="F5F4" population="50" workPosition="50" />
+            <street edge="F5G5" population="50" workPosition="50" />
+            <street edge="F5E5" population="50" workPosition="50" />
+            <street edge="F6F7" population="0" workPosition="0" />
+            <street edge="F6F5" population="50" workPosition="50" />
+            <street edge="F6G6" population="50" workPosition="50" />
+            <street edge="F6E6" population="50" workPosition="50" />
+            <street edge="F7F8" population="0" workPosition="0" />
+            <street edge="F7F6" population="50" workPosition="50" />
+            <street edge="F7G7" population="50" workPosition="50" />
+            <street edge="F7E7" population="50" workPosition="50" />
+            <street edge="F8F9" population="0" workPosition="0" />
+            <street edge="F8F7" population="50" workPosition="50" />
+            <street edge="F8G8" population="50" workPosition="50" />
+            <street edge="F8E8" population="50" workPosition="50" />
+            <street edge="F9F10" population="50" workPosition="50" />
+            <street edge="F9F8" population="50" workPosition="50" />
+            <street edge="F9G9" population="50" workPosition="50" />
+            <street edge="F9E9" population="50" workPosition="50" />
+            <street edge="F10F11" population="50" workPosition="50" />
+            <street edge="F10F9" population="50" workPosition="50" />
+            <street edge="F10G10" population="50" workPosition="50" />
+            <street edge="F10E10" population="50" workPosition="50" />
+            <street edge="F11F10" population="50" workPosition="50" />
+            <street edge="G0G1" population="50" workPosition="50" />
+            <street edge="G1G2" population="50" workPosition="50" />
+            <street edge="G1G0" population="0" workPosition="0" />
+            <street edge="G1H1" population="50" workPosition="50" />
+            <street edge="G1F1" population="50" workPosition="50" />
+            <street edge="G2G3" population="50" workPosition="50" />
+            <street edge="G2G1" population="0" workPosition="0" />
+            <street edge="G2H2" population="50" workPosition="50" />
+            <street edge="G2F2" population="50" workPosition="50" />
+            <street edge="G3G4" population="50" workPosition="50" />
+            <street edge="G3G2" population="0" workPosition="0" />
+            <street edge="G3H3" population="50" workPosition="50" />
+            <street edge="G3F3" population="50" workPosition="50" />
+            <street edge="G4G5" population="50" workPosition="50" />
+            <street edge="G4G3" population="0" workPosition="0" />
+            <street edge="G4H4" population="50" workPosition="50" />
+            <street edge="G4F4" population="50" workPosition="50" />
+            <street edge="G5G6" population="50" workPosition="50" />
+            <street edge="G5G4" population="0" workPosition="0" />
+            <street edge="G5H5" population="50" workPosition="50" />
+            <street edge="G5F5" population="50" workPosition="50" />
+            <street edge="G6G7" population="50" workPosition="50" />
+            <street edge="G6G5" population="0" workPosition="0" />
+            <street edge="G6H6" population="50" workPosition="50" />
+            <street edge="G6F6" population="50" workPosition="50" />
+            <street edge="G7G8" population="50" workPosition="50" />
+            <street edge="G7G6" population="0" workPosition="0" />
+            <street edge="G7H7" population="50" workPosition="50" />
+            <street edge="G7F7" population="50" workPosition="50" />
+            <street edge="G8G9" population="50" workPosition="50" />
+            <street edge="G8G7" population="0" workPosition="0" />
+            <street edge="G8H8" population="50" workPosition="50" />
+            <street edge="G8F8" population="50" workPosition="50" />
+            <street edge="G9G10" population="0" workPosition="0" />
+            <street edge="G9G8" population="0" workPosition="0" />
+            <street edge="G9H9" population="50" workPosition="50" />
+            <street edge="G9F9" population="50" workPosition="50" />
+            <street edge="G10G11" population="50" workPosition="50" />
+            <street edge="G10G9" population="50" workPosition="50" />
+            <street edge="G10H10" population="50" workPosition="50" />
+            <street edge="G10F10" population="50" workPosition="50" />
+            <street edge="G11G10" population="50" workPosition="50" />
+            <street edge="H0H1" population="0" workPosition="0" />
+            <street edge="H1H2" population="0" workPosition="0" />
+            <street edge="H1H0" population="50" workPosition="50" />
+            <street edge="H1I1" population="50" workPosition="50" />
+            <street edge="H1G1" population="50" workPosition="50" />
+            <street edge="H2H3" population="0" workPosition="0" />
+            <street edge="H2H1" population="50" workPosition="50" />
+            <street edge="H2I2" population="50" workPosition="50" />
+            <street edge="H2G2" population="50" workPosition="50" />
+            <street edge="H3H4" population="0" workPosition="0" />
+            <street edge="H3H2" population="50" workPosition="50" />
+            <street edge="H3I3" population="50" workPosition="50" />
+            <street edge="H3G3" population="50" workPosition="50" />
+            <street edge="H4H5" population="0" workPosition="0" />
+            <street edge="H4H3" population="50" workPosition="50" />
+            <street edge="H4I4" population="50" workPosition="50" />
+            <street edge="H4G4" population="50" workPosition="50" />
+            <street edge="H5H6" population="0" workPosition="0" />
+            <street edge="H5H4" population="50" workPosition="50" />
+            <street edge="H5I5" population="50" workPosition="50" />
+            <street edge="H5G5" population="50" workPosition="50" />
+            <street edge="H6H7" population="0" workPosition="0" />
+            <street edge="H6H5" population="50" workPosition="50" />
+            <street edge="H6I6" population="50" workPosition="50" />
+            <street edge="H6G6" population="50" workPosition="50" />
+            <street edge="H7H8" population="0" workPosition="0" />
+            <street edge="H7H6" population="50" workPosition="50" />
+            <street edge="H7I7" population="50" workPosition="50" />
+            <street edge="H7G7" population="50" workPosition="50" />
+            <street edge="H8H9" population="0" workPosition="0" />
+            <street edge="H8H7" population="50" workPosition="50" />
+            <street edge="H8I8" population="50" workPosition="50" />
+            <street edge="H8G8" population="50" workPosition="50" />
+            <street edge="H9H10" population="50" workPosition="50" />
+            <street edge="H9H8" population="50" workPosition="50" />
+            <street edge="H9I9" population="50" workPosition="50" />
+            <street edge="H9G9" population="50" workPosition="50" />
+            <street edge="H10H11" population="50" workPosition="50" />
+            <street edge="H10H9" population="50" workPosition="50" />
+            <street edge="H10I10" population="50" workPosition="50" />
+            <street edge="H10G10" population="50" workPosition="50" />
+            <street edge="H11H10" population="50" workPosition="50" />
+            <street edge="I0I1" population="50" workPosition="50" />
+            <street edge="I1I2" population="50" workPosition="50" />
+            <street edge="I1I0" population="0" workPosition="0" />
+            <street edge="I1J1" population="50" workPosition="50" />
+            <street edge="I1H1" population="50" workPosition="50" />
+            <street edge="I2I3" population="50" workPosition="50" />
+            <street edge="I2I1" population="0" workPosition="0" />
+            <street edge="I2J2" population="50" workPosition="50" />
+            <street edge="I2H2" population="50" workPosition="50" />
+            <street edge="I3I4" population="50" workPosition="50" />
+            <street edge="I3I2" population="0" workPosition="0" />
+            <street edge="I3J3" population="50" workPosition="50" />
+            <street edge="I3H3" population="50" workPosition="50" />
+            <street edge="I4I5" population="50" workPosition="50" />
+            <street edge="I4I3" population="0" workPosition="0" />
+            <street edge="I4J4" population="50" workPosition="50" />
+            <street edge="I4H4" population="50" workPosition="50" />
+            <street edge="I5I6" population="50" workPosition="50" />
+            <street edge="I5I4" population="0" workPosition="0" />
+            <street edge="I5J5" population="50" workPosition="50" />
+            <street edge="I5H5" population="50" workPosition="50" />
+            <street edge="I6I7" population="50" workPosition="50" />
+            <street edge="I6I5" population="0" workPosition="0" />
+            <street edge="I6J6" population="50" workPosition="50" />
+            <street edge="I6H6" population="50" workPosition="50" />
+            <street edge="I7I8" population="50" workPosition="50" />
+            <street edge="I7I6" population="0" workPosition="0" />
+            <street edge="I7J7" population="50" workPosition="50" />
+            <street edge="I7H7" population="50" workPosition="50" />
+            <street edge="I8I9" population="50" workPosition="50" />
+            <street edge="I8I7" population="0" workPosition="0" />
+            <street edge="I8J8" population="50" workPosition="50" />
+            <street edge="I8H8" population="50" workPosition="50" />
+            <street edge="I9I10" population="0" workPosition="0" />
+            <street edge="I9I8" population="0" workPosition="0" />
+            <street edge="I9J9" population="50" workPosition="50" />
+            <street edge="I9H9" population="50" workPosition="50" />
+            <street edge="I10I11" population="50" workPosition="50" />
+            <street edge="I10I9" population="50" workPosition="50" />
+            <street edge="I10J10" population="50" workPosition="50" />
+            <street edge="I10H10" population="50" workPosition="50" />
+            <street edge="I11I10" population="50" workPosition="50" />
+            <street edge="J0J1" population="0" workPosition="0" />
+            <street edge="J1J2" population="0" workPosition="0" />
+            <street edge="J1J0" population="50" workPosition="50" />
+            <street edge="J1K1" population="50" workPosition="50" />
+            <street edge="J1I1" population="50" workPosition="50" />
+            <street edge="J2J3" population="0" workPosition="0" />
+            <street edge="J2J1" population="50" workPosition="50" />
+            <street edge="J2K2" population="50" workPosition="50" />
+            <street edge="J2I2" population="50" workPosition="50" />
+            <street edge="J3J4" population="0" workPosition="0" />
+            <street edge="J3J2" population="50" workPosition="50" />
+            <street edge="J3K3" population="50" workPosition="50" />
+            <street edge="J3I3" population="50" workPosition="50" />
+            <street edge="J4J5" population="0" workPosition="0" />
+            <street edge="J4J3" population="50" workPosition="50" />
+            <street edge="J4K4" population="50" workPosition="50" />
+            <street edge="J4I4" population="50" workPosition="50" />
+            <street edge="J5J6" population="0" workPosition="0" />
+            <street edge="J5J4" population="50" workPosition="50" />
+            <street edge="J5K5" population="50" workPosition="50" />
+            <street edge="J5I5" population="50" workPosition="50" />
+            <street edge="J6J7" population="0" workPosition="0" />
+            <street edge="J6J5" population="50" workPosition="50" />
+            <street edge="J6K6" population="50" workPosition="50" />
+            <street edge="J6I6" population="50" workPosition="50" />
+            <street edge="J7J8" population="0" workPosition="0" />
+            <street edge="J7J6" population="50" workPosition="50" />
+            <street edge="J7K7" population="50" workPosition="50" />
+            <street edge="J7I7" population="50" workPosition="50" />
+            <street edge="J8J9" population="0" workPosition="0" />
+            <street edge="J8J7" population="50" workPosition="50" />
+            <street edge="J8K8" population="50" workPosition="50" />
+            <street edge="J8I8" population="50" workPosition="50" />
+            <street edge="J9J10" population="50" workPosition="50" />
+            <street edge="J9J8" population="50" workPosition="50" />
+            <street edge="J9K9" population="50" workPosition="50" />
+            <street edge="J9I9" population="50" workPosition="50" />
+            <street edge="J10J11" population="50" workPosition="50" />
+            <street edge="J10J9" population="50" workPosition="50" />
+            <street edge="J10K10" population="50" workPosition="50" />
+            <street edge="J10I10" population="50" workPosition="50" />
+            <street edge="J11J10" population="50" workPosition="50" />
+            <street edge="K0K1" population="50" workPosition="50" />
+            <street edge="K1K2" population="50" workPosition="50" />
+            <street edge="K1K0" population="0" workPosition="0" />
+            <street edge="K1L1" population="0" workPosition="0" />
+            <street edge="K1J1" population="50" workPosition="50" />
+            <street edge="K2K3" population="50" workPosition="50" />
+            <street edge="K2K1" population="0" workPosition="0" />
+            <street edge="K2L2" population="0" workPosition="0" />
+            <street edge="K2J2" population="50" workPosition="50" />
+            <street edge="K3K4" population="50" workPosition="50" />
+            <street edge="K3K2" population="0" workPosition="0" />
+            <street edge="K3L3" population="0" workPosition="0" />
+            <street edge="K3J3" population="50" workPosition="50" />
+            <street edge="K4K5" population="50" workPosition="50" />
+            <street edge="K4K3" population="0" workPosition="0" />
+            <street edge="K4L4" population="0" workPosition="0" />
+            <street edge="K4J4" population="50" workPosition="50" />
+            <street edge="K5K6" population="50" workPosition="50" />
+            <street edge="K5K4" population="0" workPosition="0" />
+            <street edge="K5L5" population="0" workPosition="0" />
+            <street edge="K5J5" population="50" workPosition="50" />
+            <street edge="K6K7" population="50" workPosition="50" />
+            <street edge="K6K5" population="0" workPosition="0" />
+            <street edge="K6L6" population="0" workPosition="0" />
+            <street edge="K6J6" population="50" workPosition="50" />
+            <street edge="K7K8" population="50" workPosition="50" />
+            <street edge="K7K6" population="0" workPosition="0" />
+            <street edge="K7L7" population="0" workPosition="0" />
+            <street edge="K7J7" population="50" workPosition="50" />
+            <street edge="K8K9" population="50" workPosition="50" />
+            <street edge="K8K7" population="0" workPosition="0" />
+            <street edge="K8L8" population="0" workPosition="0" />
+            <street edge="K8J8" population="50" workPosition="50" />
+            <street edge="K9K10" population="0" workPosition="0" />
+            <street edge="K9K8" population="0" workPosition="0" />
+            <street edge="K9L9" population="0" workPosition="0" />
+            <street edge="K9J9" population="50" workPosition="50" />
+            <street edge="K10K11" population="50" workPosition="50" />
+            <street edge="K10K9" population="50" workPosition="50" />
+            <street edge="K10L10" population="50" workPosition="50" />
+            <street edge="K10J10" population="50" workPosition="50" />
+            <street edge="K11K10" population="50" workPosition="50" />
+            <street edge="L1K1" population="0" workPosition="0" />
+            <street edge="L2K2" population="0" workPosition="0" />
+            <street edge="L3K3" population="0" workPosition="0" />
+            <street edge="L4K4" population="0" workPosition="0" />
+            <street edge="L5K5" population="0" workPosition="0" />
+            <street edge="L6K6" population="0" workPosition="0" />
+            <street edge="L7K7" population="0" workPosition="0" />
+            <street edge="L8K8" population="0" workPosition="0" />
+            <street edge="L9K9" population="0" workPosition="0" />
+            <street edge="L10K10" population="0" workPosition="0" />
+        </streets>
+
+        <cityGates>
+            <entrance edge="B1B0" pos="100" incoming="0" outgoing="1" />
+            <entrance edge="E0E1" pos="0" incoming="1" outgoing="0" />
+            <entrance edge="H1H0" pos="100" incoming="0" outgoing="1" />
+            <entrance edge="K0K1" pos="0" incoming="1" outgoing="0" />
+
+            <entrance edge="K1L1" pos="100" incoming="0" outgoing="1" />
+            <entrance edge="L4K4" pos="0" incoming="1" outgoing="0" />
+            <entrance edge="K7L7" pos="100" incoming="0" outgoing="1" />
+            <entrance edge="L10K10" pos="0" incoming="1" outgoing="0" />
+
+            <entrance edge="B11B10" pos="0" incoming="1" outgoing="0" />
+            <entrance edge="E10E11" pos="100" incoming="0" outgoing="1" />
+            <entrance edge="H11H10" pos="0" incoming="1" outgoing="0" />
+            <entrance edge="K10K11" pos="100" incoming="0" outgoing="1" />
+
+            <entrance edge="A1B1" pos="0" incoming="1" outgoing="0" />
+            <entrance edge="B4A4" pos="0" incoming="0" outgoing="1" />
+            <entrance edge="A7B7" pos="100" incoming="1" outgoing="0" />
+            <entrance edge="B10A10" pos="0" incoming="0" outgoing="1" />
+        </cityGates>
+
+        <schools>
+            <!--3 schools with the same characteristics for not creating biases within the grid-->
+            <school edge="D1C1" pos="56" beginAge="0" endAge="16" capacity="400" opening="32400" closing="64800" />
+            <school edge="J2K2" pos="48" beginAge="0" endAge="16" capacity="400" opening="32400" closing="64800" />
+            <school edge="H3H2" pos="45" beginAge="0" endAge="16" capacity="400" opening="32400" closing="64800" />
+
+            <school edge="G3F3" pos="33" beginAge="0" endAge="16" capacity="400" opening="32400" closing="64800" />
+            <school edge="D5E5" pos="19" beginAge="0" endAge="16" capacity="400" opening="32400" closing="64800" />
+            <school edge="J6J5" pos="54" beginAge="0" endAge="16" capacity="400" opening="32400" closing="64800" />
+
+            <school edge="K7K6" pos="47" beginAge="0" endAge="16" capacity="400" opening="32400" closing="64800" />
+            <school edge="D7E7" pos="66" beginAge="0" endAge="16" capacity="400" opening="32400" closing="64800" />
+            <school edge="G7G8" pos="45" beginAge="0" endAge="16" capacity="400" opening="32400" closing="64800" />
+
+            <school edge="C8B8" pos="59" beginAge="0" endAge="16" capacity="400" opening="32400" closing="64800" />
+            <school edge="E9E10" pos="47" beginAge="0" endAge="16" capacity="400" opening="32400" closing="64800" />
+            <school edge="K10J10" pos="45" beginAge="0" endAge="16" capacity="400" opening="32400" closing="64800" />
+        </schools>
+    </city>
