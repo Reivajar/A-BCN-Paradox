@@ -5,7 +5,8 @@
 > * Project Title: Suboptimal Traffic Efficiency in Changing Habitats (SOTECH). *A Barcelona Paradox*
 
 ## Abstract
----------- ***to be completed***
+
+*Following the evolution of last urban trends in re-purposing the public space for improving quality of life in cities, there is an increasing shrinkage of space for cars. Among these initiatives, Barcelona Superblocks is one of the most paradigmatic. As frequent in urban planning, the systematic analysis and evidence construction of these interventions are frequently ignored. In this experiment we proposed to analyze the traffic outcomes of the implementation of this Superblocks plan in an idealized Barcelona grid together with other potential scenarios to be as well implemented. By connecting urban interventions in city street networks with their expected outcomes we highlight the promising capabilities of the use of these methods based on modeling and simulation to question, criticise, iterate, and test city making processes in an accessible way for any stakeholder, both experts and lay people.*
 
 ## General Introduction
 
