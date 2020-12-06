@@ -141,4 +141,4 @@ Running this model with different demand scaling will allow to test the behavior
 
 ## Other
 
-(mention datasets you are going to use)
+Note: It is needed to install SUMO software for being able to run all the scripts and experiments. Additional information is provided into the code notes. For more information regarding the installation of SUMO visit: https://www.eclipse.org/sumo/
