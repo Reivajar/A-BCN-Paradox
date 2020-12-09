@@ -8,6 +8,7 @@
 \usepackage{natbib}
 \usepackage{amssymb, amsmath, bm}
 \usepackage{booktabs}
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
 \DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
 
 \usepackage[nottoc,numbib]{tocbibind}
@@ -272,9 +273,34 @@ The mesoscopic simulations performed for validation of the microscopic model, an
 
 \footnotetext{Most of the adjustment has been based on heuristics, as it will be discussed later. However, some of the parameters chosen are based on the actual behavior of the microscopic simulation. For instance, the length of the segments is increased to 135 meters to ensure that the segments between intersections are not subdivided artificially, multi-lane is enforced, and junction-control approximates the behavior of actual traffic lights. For further information: https://sumo.dlr.de/docs/sumo.html#mesoscopic and https://sumo.dlr.de/docs/Simulation/Meso.html}
 
-Routing is computed only once, directly from the demand creation (see section \textit{4.2. Demand}) at the beginning of model configuration. It means that any kind of dynamic re-computation of optimal routes given traffic conditions is not implemented, meaning that alternative routes for avoiding traffic jams are disregarded. SUMO includes several routing algorithms\footnote{Dijikstra (the by-default setting), A*, and Contraction hierarchies in two different implementations. See: https://sumo.dlr.de/docs/Simulation/Routing.html} which are used for computing the routes from trips definitions. During the development of the simulation, all of them are tested both from the computation performance and the simulation results perspective. Finally, Contraction hierarchies are implemented for performance reasons, although Dijkstra provides equivalent results for the simulations.
+Routing is computed only once, directly from the demand creation (see section \textit{4.2. Demand}) at the beginning of model configuration. It means that any kind of dynamic re-computation of optimal routes given traffic conditions in real-time is not implemented, meaning that alternative routes for avoiding traffic jams during the simulation are disregarded. 
+
+SUMO includes several routing algorithms\footnote{Dijikstra (the by-default setting), A*, and Contraction hierarchies in two different implementations. See: https://sumo.dlr.de/docs/Simulation/Routing.html} which are used for computing the routes from trips definitions. During the development of the simulation, all of them are tested both from the computation performance and the simulation results perspective. Finally, Contraction hierarchies are implemented for performance reasons, although Dijkstra provides equivalent results for the simulations.
 
 \section{Simulation Results and Discussion}
+\subsection{Metrics pre-processing}
+For each of the four proposed network settings, a Macroscopic Fundamental Diagram is created, where flow and density of vehicles are plotted altogether from sampling every 60 seconds. 
+Flow of vehicles per hour $\Phi$ at a given time \textit{t} of the simulation is computed from the output files according to
+
+\begin{equation}
+\Phi _t = \frac{\frac{\sum_{i}^{n}(\Phi_{in(i)}^t+\Phi_{started(i)}^t)}{T}\times 3600}{n}
+\end{equation}
+
+where \testit{T} is the sampling period (60 seconds), \textit{n} is the number of edges in the network, $\Phi_{in(i)}^t$ is the number of vehicles that entered a given edge \textit{i} within the time period \textit{t}, and $\Phi_{started(i)}^t$ are the vehicles that started their trip from the given edge \textit{i} during \textit{t}.
+The density of vehicles per km \textit{d} at a given time period \textit{t} of the simulation is
+\begin{equation}
+    d_t= \frac{\frac{\sum_{n}^{i}Q_{i}^t}{T}}{L/1000}
+\end{equation}
+where $Q_{i}^t$ is the number of vehicles counted on the edge in each second summed up over the measurement interval \textit{t} that lasts \textit{T}, and \textit{L} is the total lanes length of the network in meters.
+
+For characterizing each of these flow/density measurements distributions, the data points are interpolated for obtaining a smooth definition. Firstly, a Piecewise Cubic Hermite Interpolating Polynomial\footnote{See \url{https://docs.scipy.org/doc/scipy-0.18.1/reference/generated/scipy.interpolate.PchipInterpolator.html}} is applied to the distribution, followed by a Locally Weighted Scatterplot Smoothing (LOWESS) function\footnote{See \url{https://www.statsmodels.org/stable/generated/statsmodels.nonparametric.smoothers_lowess.lowess.html}}. Consequently, a clear definition of the flow/density relationship is obtained whose optimal point at which flow is maximized before entering into a congested regime.
+
+\subsection{Results}
+
+
+
+
+
 
 
 
