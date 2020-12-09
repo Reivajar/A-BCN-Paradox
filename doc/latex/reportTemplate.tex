@@ -293,11 +293,27 @@ The density of vehicles per km \textit{d} at a given time period \textit{t} of t
 \end{equation}
 where $Q_{i}^t$ is the number of vehicles counted on the edge in each second summed up over the measurement interval \textit{t} that lasts \textit{T}, and \textit{L} is the total lanes length of the network in meters.
 
-For characterizing each of these flow/density measurements distributions, the data points are interpolated for obtaining a smooth definition. Firstly, a Piecewise Cubic Hermite Interpolating Polynomial\footnote{See \url{https://docs.scipy.org/doc/scipy-0.18.1/reference/generated/scipy.interpolate.PchipInterpolator.html}} is applied to the distribution, followed by a Locally Weighted Scatterplot Smoothing (LOWESS) function\footnote{See \url{https://www.statsmodels.org/stable/generated/statsmodels.nonparametric.smoothers_lowess.lowess.html}}. Consequently, a clear definition of the flow/density relationship is obtained whose optimal point at which flow is maximized before entering into a congested regime.
+For characterizing each of these flow/density measurements distributions, the data points are interpolated for obtaining a smooth definition. Firstly, a Piecewise Cubic Hermite Interpolating Polynomial\footnote{See \url{https://docs.scipy.org/doc/scipy-0.18.1/reference/generated/scipy.interpolate.PchipInterpolator.html}} is applied to the distribution, followed by a Locally Weighted Scatterplot Smoothing (LOWESS) function\footnote{See \url{https://www.statsmodels.org/stable/generated/statsmodels.nonparametric.smoothers_lowess.lowess.html}}. Consequently, a clear definition of the flow/density relationship is obtained whose optimal point at which flow is maximized before entering into a congested regime. Additionally, and optimal average speed can be obtained from: 
+
+
 
 \subsection{Results}
 
-
+\begin{table}[htbp]
+\centering
+\caption{Results. Optimal points for each network simulation.}
+\label{tab:results-tip-points}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{rcccc}
+\toprule
+\textbf{Network} & \textbf{Net 1} & \textbf{Net 2} & \textbf{Net 3} & \textbf{Net 4} \\ \toprule
+\textit{Description} & \multicolumn{1}{r}{\textit{Basic network}} & \textit{2x2 superblocks} & \textit{3x3 superblocks} & \textit{w/ diagonal avenue} \\ \midrule
+Max. flow (veh./h) & 989 & 555.8 & 372.8 & 438 \\ \midrule
+Density at max. flow (veh./km) & 40.9 & 23.9 & 18.6 & 20.8 \\ \midrule
+Optimal speed (km/h) & 24.2 & 23.2 & 19.9 & 21.1 \\ \bottomrule
+\end{tabular}%
+}
+\end{table}
 
 
 
