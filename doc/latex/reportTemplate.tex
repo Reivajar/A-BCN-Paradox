@@ -103,7 +103,7 @@ The understanding of complex effects of spatial planning decisions in cities is 
 
 \subsection {Barcelona's Superblocks}
 
-This knowledge and methodological gap does not hinder experimentation and innovation in the most complex human creation \citep{Levi-Strauss1955} as cities are. In recent years, there is a clear trend on reducing the space reserved for private motor vehicles in cities to improve air quality and environmental conditions, to foster alternative transportation modes, or to reduce the use of fossil fuels (***citations would be good here*** and as well ***examples of these interventions***). Among these current trends on urban planning, Barcelona's Superblocks has been one of the most published in the last years (***some refs from The Guardian, NYT, etc***). The Superblock's plan aims to reduce the space for the motor private vehicles in the street network to improve living conditions of city inhabitants by reducing noise and air-pollution and giving room to other transportation modes without a proportional drop-off in the circulation of vehicles for the same level of service \citep{Rueda2018}. It is being accomplished by creating large blocks of 3-by-3 of current square city blocks and leaving inside only loop-like residential streets. It means that 1 out of 3 streets of the city are left for driving through traffic. The well-known and a-thousands-of-times depicted idiosyncrasy of the so regular Barcelona grid comes together with a long tradition on public engagement on urban planning and experimentation in the city set an ideal scenario for testing out the unknown effect of these and other modifications in urban networks.
+This knowledge and methodological gap does not hinder experimentation and innovation in the most complex human creation \citep{Levi-Strauss1955} as cities are. In recent years, there is a clear trend on reducing the space reserved for private motor vehicles in cities to improve air quality and environmental conditions, to foster alternative transportation modes, or to reduce the use of fossil fuels (***citations would be good here*** and as well ***examples of these interventions***). Among these current trends on urban planning, Barcelona's Superblocks has been one of the most published in the last years \citep{Bausells2016, Hu2016, Morel2019, Wiedeman2018}. The Superblock's plan aims to reduce the space for the motor private vehicles in the street network to improve living conditions of city inhabitants by reducing noise and air-pollution and giving room to other transportation modes without a proportional drop-off in the circulation of vehicles for the same level of service \citep{Rueda2018}. It is being accomplished by creating large blocks of 3-by-3 of current square city blocks and leaving inside only loop-like residential streets. It means that 1 out of 3 streets of the city are left for driving through traffic. The well-known and a-thousands-of-times depicted idiosyncrasy of the so regular Barcelona grid comes together with a long tradition on public engagement on urban planning and experimentation in the city set an ideal scenario for testing out the unknown effect of these and other modifications in urban networks.
 
 \begin{figure}[h]
 \centering
@@ -152,7 +152,7 @@ Finally, a fourth network is included to account for a remarkable feature of the
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[scale=0.35]{bcn_paradox_4nets.PNG}
+\includegraphics[width=\textwidth]{bcn_paradox_4nets.PNG}
 \caption{From left to right: Net 1 (basic network), net 2 (2x2 superblocks), net 3 (3x3 superblocks), and net 4 (with diagonal broad avenue).}
 \label{fig:From left to right: Net 1 (basic network), net 2 (2x2 superblocks), net 3 (3x3 superblocks), and net 4 (with diagonal broad avenue).}
 \end{figure}
@@ -186,7 +186,7 @@ In general, the regular grid of the city of Barcelona encompasses core urban dis
 
 Very similarly to the network creation process, we generalize the transportation demand for an equivalent area of the city to the modeled 1.44 km\textsuperscript{2} urban square without representing any concrete neighborhood of the city of Barcelona.
 
-In the case of the transport demand created by *activitygen*, it needs basic demographic data which is extrapolated and generalized for the modeled network area (1.44 km\textsuperscript{2}) based on the Eixample district in Barcelona (7.46 km\textsuperscript{2}) \citep{AjuntamentdeBarcelona2018}\citep{AreadeBarcelona.AutoritatdelTransportMetropolita2020}\citep{DepartamentdAnalisiOficinaMunicipaldeDades.AjuntamentdeBarcelona2020}. This area matches approximately the assumption of the expected mobility levels for a central part of Barcelona. As a result, the following population statistics are assumed for the modeled area and they are parsed into a XML configuration file (see code folder) required by the tool for generate the demand:
+In the case of the transport demand created by *activitygen*, it needs basic demographic data which is extrapolated and generalized for the modeled network area (1.44 km\textsuperscript{2}) based on the Eixample district in Barcelona (7.46 km\textsuperscript{2}) \citep{AjuntamentdeBarcelona2018, AreadeBarcelona.AutoritatdelTransportMetropolita2020, DepartamentdAnalisiOficinaMunicipaldeDades.AjuntamentdeBarcelona2020}. This area matches approximately the assumption of the expected mobility levels for a central part of Barcelona. As a result, the following population statistics are assumed for the modeled area and they are parsed into a XML configuration file (see code folder) required by the tool for generate the demand:
 
 \begin{table}[htbp]
 \centering
@@ -293,9 +293,11 @@ The density of vehicles per km \textit{d} at a given time period \textit{t} of t
 \end{equation}
 where $Q_{i}^t$ is the number of vehicles counted on the edge in each second summed up over the measurement interval \textit{t} that lasts \textit{T}, and \textit{L} is the total lanes length of the network in meters.
 
-For characterizing each of these flow/density measurements distributions, the data points are interpolated for obtaining a smooth definition. Firstly, a Piecewise Cubic Hermite Interpolating Polynomial\footnote{See \url{https://docs.scipy.org/doc/scipy-0.18.1/reference/generated/scipy.interpolate.PchipInterpolator.html}} is applied to the distribution, followed by a Locally Weighted Scatterplot Smoothing (LOWESS) function\footnote{See \url{https://www.statsmodels.org/stable/generated/statsmodels.nonparametric.smoothers_lowess.lowess.html}}. Consequently, a clear definition of the flow/density relationship is obtained whose optimal point at which flow is maximized before entering into a congested regime. Additionally, and optimal average speed can be obtained from: 
-
-
+For characterizing each of these flow/density measurements distributions, the data points are interpolated for obtaining a smooth definition. Firstly, a Piecewise Cubic Hermite Interpolating Polynomial\footnote{See \url{https://docs.scipy.org/doc/scipy-0.18.1/reference/generated/scipy.interpolate.PchipInterpolator.html}} is applied to the distribution, followed by a Locally Weighted Scatterplot Smoothing (LOWESS) function\footnote{See \url{https://www.statsmodels.org/stable/generated/statsmodels.nonparametric.smoothers_lowess.lowess.html}}. Consequently, a clear definition of the flow/density relationship is obtained whose optimal point at which flow is maximized before entering into a congested regime. Additionally, and optimal average speed can be obtained from
+\begin{equation}
+\bar{v}_{opt}=\frac{\Phi_{max}}{d_{\Phi_{max}}}
+\end{equation}
+where $\Phi_{max}$ is the maximum traffic flow, and $d_{\Phi_{max}}$ is the vehicular density at the maximum traffic flow.
 
 \subsection{Results}
 
@@ -308,17 +310,19 @@ For characterizing each of these flow/density measurements distributions, the da
 \toprule
 \textbf{Network} & \textbf{Net 1} & \textbf{Net 2} & \textbf{Net 3} & \textbf{Net 4} \\ \toprule
 \textit{Description} & \multicolumn{1}{r}{\textit{Basic network}} & \textit{2x2 superblocks} & \textit{3x3 superblocks} & \textit{w/ diagonal avenue} \\ \midrule
-Max. flow (veh./h) & 989 & 555.8 & 372.8 & 438 \\ \midrule
-Density at max. flow (veh./km) & 40.9 & 23.9 & 18.6 & 20.8 \\ \midrule
-Optimal speed (km/h) & 24.2 & 23.2 & 19.9 & 21.1 \\ \bottomrule
+Max. flow ($\Phi_{max}$)(veh./h) & 989 & 555.8 & 372.8 & 438 \\ \midrule
+Density at max. flow ($d_{\Phi_{max}}$)(veh./km) & 40.9 & 23.9 & 18.6 & 20.8 \\ \midrule
+Optimal speed ($\bar{v}_{opt}$)(km/h) & 24.2 & 23.2 & 19.9 & 21.1 \\ \bottomrule
 \end{tabular}%
 }
 \end{table}
 
+In general terms, the implementation of the superblocks layouts reduces the capacity of the network (see table 5). However, when comparing the network data from table 1 with the results in table 5, we see that this reduction is not linearly proportional to the shrinkage of the typical metrics describing the networks. A reduction in the total length of lanes of 32\% and 36\% respectively in nets 2 and 3 causes a drop of maximum capacity of the networks of 44\% and 62\%. If we consider intersection as the most constraining feature of the networks, the shrinkage is 75\% for network 2 and 84\% for network 3.
+More 
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[scale=0.30]{code/simulations/charts/MFD02_compar_01-02-03-04_micro.png}
+\includegraphics[width=\textwidth]{code/simulations/charts/MFD02_compar_01-02-03-04_micro.png}
 \caption{MFD of microscopic simulation for the four proposed networks.}
 \label{fig:MFD of microscopic simulation for the four proposed networks.}
 \end{figure}
