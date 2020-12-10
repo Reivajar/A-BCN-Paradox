@@ -3,6 +3,7 @@
 \geometry{letterpaper}                   
 
 \usepackage{graphicx}
+\usepackage{subfig}
 \usepackage{amssymb}
 \usepackage{epstopdf}
 \usepackage{natbib}
@@ -345,6 +346,21 @@ These results from the microscopic simulation are qualitatively validated by the
 \centering
 \includegraphics[width=\textwidth]{code/simulations/charts/MFD02_compar_01-02-03-04_micro.png}
 \caption{MFD of microscopic simulation for the four proposed networks.}
+\label{fig:MFD of microscopic simulation for the four proposed networks.}
+\end{figure}
+
+
+\begin{figure}[htbp]
+\centering
+\subfloat[\centering left]{{
+\includegraphics[width=0.45\textwidth]{code/simulations/charts/MFD01_compar_01-02-03-04_meso_AGG_4_AVG.png}
+}}%
+\qquad
+\subfloat[\centering left]{{
+\includegraphics[width=0.45\textwidth]{code/simulations/charts/MFD01_compar_01-02-03-04_micro.png}
+}}%
+
+\caption{MFD of mesoscopic simulations for the four proposed networks.}
 \label{fig:MFD of microscopic simulation for the four proposed networks.}
 \end{figure}
 
