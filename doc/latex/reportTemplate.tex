@@ -310,15 +310,16 @@ where $\Phi_{max}$ is the maximum traffic flow, and $d_{\Phi_{max}}$ is the vehi
 \toprule
 \textbf{Network} & \textbf{Net 1} & \textbf{Net 2} & \textbf{Net 3} & \textbf{Net 4} \\ \toprule
 \textit{Description} & \multicolumn{1}{r}{\textit{Basic network}} & \textit{2x2 superblocks} & \textit{3x3 superblocks} & \textit{w/ diagonal avenue} \\ \midrule
-Max. flow ($\Phi_{max}$)(veh./h) & 989 & 555.8 & 372.8 & 438 \\ \midrule
+Max. flow ($\Phi_{max}$)(veh./h) & 989.1 & 555.8 & 372.8 & 438 \\ \midrule
 Density at max. flow ($d_{\Phi_{max}}$)(veh./km) & 40.9 & 23.9 & 18.6 & 20.8 \\ \midrule
 Optimal speed ($\bar{v}_{opt}$)(km/h) & 24.2 & 23.2 & 19.9 & 21.1 \\ \bottomrule
 \end{tabular}%
 }
 \end{table}
 
-In general terms, the implementation of the superblocks layouts reduces the capacity of the network (see table 5). However, when comparing the network data from table 1 with the results in table 5, we see that this reduction is not linearly proportional to the shrinkage of the typical metrics describing the networks. A reduction in the total length of lanes of 32\% and 36\% respectively in nets 2 and 3 causes a drop of maximum capacity of the networks of 44\% and 62\%. If we consider intersection as the most constraining feature of the networks, the shrinkage is 75\% for network 2 and 84\% for network 3.
-More 
+In general terms, the implementation of the superblocks layouts reduces the capacity of the network. However, when comparing the network data (see table 1) with the results (see table 5), we see that this reduction is not linearly proportional to the shrinkage of the typical metrics describing the networks. For the superblocks scenarios, the length of lanes is reduced a 32\% and 36\% and the number of intersections a 75\% and a 84\% respectively in networks 2 and 3. However, the maximum capacity of the network 2 drops 44\% and in network 3, 62\%.
+More interesting is the case in network 4, the one that added a diagonal shortcut across the grid. The increase of the length of lanes in a 9\% and a 5\% in ht number of intersections causes a drop of the total capacity of the network of a 56\%.
+These results from the microscopic simulation are qualitatively validated by the mesoscopic models, in the three different presented calibrations.
 
 \begin{figure}[htbp]
 \centering
