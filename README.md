@@ -10,7 +10,7 @@
 * [The Model](#the-model)
 * [Expected Results](#expected-results)
 * [References](#references)
-* [Other](#other): See for technical requirements and installation instructions.
+* [Other](#other): See for technical requirements,installation instructions and description of the repository.
 
 ## Abstract
 
@@ -188,3 +188,9 @@ Running this model with different demand scaling will allow to test the behavior
 ## Other
 
 Note: It is needed to install SUMO software for being able to run all the scripts and experiments. Additional information is provided into the code notes. For more information regarding the installation of SUMO visit: https://www.eclipse.org/sumo/
+
+**It is important to make sure that the environment paths are correctly assigned for the scripts to be able to run**. See details inside notebooks
+
+* [**code**](https://github.com/Reivajar/A-BCN-Paradox/tree/master/code) folder contains all the necessary files for reproducing the results.
+* 
+
