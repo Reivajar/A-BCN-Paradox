@@ -4,8 +4,8 @@ This folder contains the necessary files for reproducing the simulations.
 
 * **simulations**  
 	* [**charts**](https://github.com/Reivajar/A-BCN-Paradox/tree/master/code/simulations/charts): images results charts from notebooks *results_processing_{...}.ipynb*   
-	* **net01**  
-		* **data**
+	* [**net01**](https://github.com/Reivajar/A-BCN-Paradox/tree/master/code/simulations/net01)  
+		* [**data**](https://github.com/Reivajar/A-BCN-Paradox/tree/master/code/simulations/net01/data)
 			* *grid01-bcn_06.net.xml*: network 01 XML file for SUMO.
 			* *activitygen-bcn_06.stat.xml*: activitygen configuration file with demographic data for network 01.
 			* *activitygen-bcn_06.trips.rou.xml*: resulting trips file from activitygen for network 01.
