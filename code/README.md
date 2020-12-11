@@ -3,7 +3,7 @@
 This folder contains the necessary files for reproducing the simulations.
 
 * **simulations**  
-	* **charts**: results charts from notebooks results_processing_*.ipynb   
+	* **charts**: results charts from notebooks *results_processing_{...}.ipynb*   
 	* **net01**  
 		* **data**  
 	* **net02**  
