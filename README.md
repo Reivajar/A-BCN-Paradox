@@ -12,13 +12,13 @@
 
 ### Towards a systematic understanding of urban spaces
 
-Utilitarian traffic optimization goals has dominated transport engineering since it appears as a proper discipline with the rise of private motorized vehicles. It has shaped our industrial and post-industrial cities that we inhabit. Modern Urbanism, as we understand it nowadays, sinks its roots at into a revolutionary scientific and technical approach towards the understanding of urban environment conditions and the efficient distribution of people, good, and resources around the city (***see Cerda***). Even Modernist urban planners and architects in the early 1900's endorsed a radical mechanistic understanding of cities (***see Chart of Athens/CIAM***). However, this scientific and positivist approach of traffic engineers contradicts the common practice in urban and city planning. Spatial planning, urban design, and collateral disciplines in the same realm, are affected by a combination of experimental data, domain expertise, ideology, and policy and political constraints in a non-straightforward decision making process in which opposed agendas promoted by different stakeholders are leverage to reach ideally a feasible compromise. In the best case scenario, many urban interventions are based on some domain expertise-backed intuition with the hope of eventually getting people's approval and political adoption.
+Utilitarian traffic optimization goals has dominated transport engineering since it appears as a proper discipline with the rise of private motorized vehicles. It has shaped our industrial and post-industrial cities that we inhabit. Modern Urbanism, as we understand it nowadays, sinks its roots at into a revolutionary scientific and technical approach towards the understanding of urban environment conditions and the efficient distribution of people, good, and resources around the city. Even Modernist urban planners and architects in the early 1900's endorsed a radical mechanistic understanding of cities. However, this scientific and positivist approach of traffic engineers contradicts the common practice in urban and city planning. Spatial planning, urban design, and collateral disciplines in the same realm, are affected by a combination of experimental data, domain expertise, ideology, and policy and political constraints in a non-straightforward decision making process in which opposed agendas promoted by different stakeholders are leverage to reach ideally a feasible compromise. In the best case scenario, many urban interventions are based on some domain expertise-backed intuition with the hope of eventually getting people's approval and political adoption.
 
-The understanding of complex effects of spatial planning decisions in cities is still very limited and scarcely applied to common practice. In this context, the assessment of urban interventions in cities frequently lacks evidence support. It undermines any possibility of evaluation of results, iterative process of potential improvement, and proper informed-decision making for technical experts, decision makers, and citizens in general. The later is particularly relevant as this lack of comprehensive information on the effects of planning decisions in cities dismisses the quality of participatory processes, by masking accessible knowledge to people, and making easier to manipulate these processes (***cite on shielding participatory processes as an excuse to self justifying already taken decisions and passing the responsibility to citizens. El Diario and a new one***).
+The understanding of complex effects of spatial planning decisions in cities is still very limited and scarcely applied to common practice. In this context, the assessment of urban interventions in cities frequently lacks evidence support. It undermines any possibility of evaluation of results, iterative process of potential improvement, and proper informed-decision making for technical experts, decision makers, and citizens in general. The later is particularly relevant as this lack of comprehensive information on the effects of planning decisions in cities dismisses the quality of participatory processes, by masking accessible knowledge to people, and making easier to manipulate these processes.
 
 ### Barcelona's Superblocks
 
-This knowledge and methodological gap does not hinder experimentation and innovation in the most complex human creation (citation here) as cities are. In recent years, there is a clear trend on reducing the space reserved for private motor vehicles in cities to improve air quality and environmental conditions, to foster alternative transportation modes, or to reduce the use of fossil fuels (***citations would be good here*** and as well ***examples of these interventions***). Among these current trends on urban planning, Barcelona's Superblocks has been one of the most published in the last years (***some refs from The Guardian, NYT, etc***). The Superblock's plan aims to reduce the space for the motor private vehicles in the street network to improve living conditions of city inhabitants by reducing noise and air-pollution and giving room to other transportation modes. It is being accomplished by creating large blocks of 3-by-3 of current square city blocks and leaving inside only loop-like residential streets. It means that 1 out of 3 streets of the city are left for driving through traffic. The well-known and a-thousands-of-times depicted idiosyncrasy of the so regular Barcelona grid comes together with a long tradition on public engagement on urban planning and experimentation in the city set an ideal scenario for testing out the unknown effect of these and other modifications in urban networks.
+This knowledge and methodological gap does not hinder experimentation and innovation in the most complex human creation (citation here) as cities are. In recent years, there is a clear trend on reducing the space reserved for private motor vehicles in cities to improve air quality and environmental conditions, to foster alternative transportation modes, or to reduce the use of fossil fuels . Among these current trends on urban planning, Barcelona's Superblocks has been one of the most published in the last years. The Superblock's plan aims to reduce the space for the motor private vehicles in the street network to improve living conditions of city inhabitants by reducing noise and air-pollution and giving room to other transportation modes. It is being accomplished by creating large blocks of 3-by-3 of current square city blocks and leaving inside only loop-like residential streets. It means that 1 out of 3 streets of the city are left for driving through traffic. The well-known and a-thousands-of-times depicted idiosyncrasy of the so regular Barcelona grid comes together with a long tradition on public engagement on urban planning and experimentation in the city set an ideal scenario for testing out the unknown effect of these and other modifications in urban networks.
 
 <div align="center">
 	<img src="other/bcn_superblocks_rueda_2018.png" />
@@ -27,7 +27,7 @@ This knowledge and methodological gap does not hinder experimentation and innova
 
 ### The Braess Paradox
 
-Among one of the most interesting and intriguing effects that defies the common understanding for operating in the urban infrastructures is the so-called Braess Paradox. It explains the counter-intuitive observation that adding more links to a given network, such as a transportation one, can slow down overall traffic flow. It is caused by the selfishly behavior of the entities that are moving in the network when trying to optimize individually their travel time (or cost). It causes to get away from the system optimum. that contrary to the real behavior, requires some level of collaboration between the agents(***cite Braess original paper***).
+Among one of the most interesting and intriguing effects that defies the common understanding for operating in the urban infrastructures is the so-called Braess Paradox. It explains the counter-intuitive observation that adding more links to a given network, such as a transportation one, can slow down overall traffic flow. It is caused by the selfishly behavior of the entities that are moving in the network when trying to optimize individually their travel time (or cost). It causes to get away from the system optimum. that contrary to the real behavior, requires some level of collaboration between the agents.
 
 ## Fundamental Questions
 
@@ -40,7 +40,7 @@ Among one of the most interesting and intriguing effects that defies the common 
 
 ## Research Methods
 
-For modeling and simulating an urban environment to test these changes a microscopic agent-based simulation approach is followed. With this in mind, a common framework applied to transportation modeling in cities called SUMO. This software can simulate virtually any element moving around a city or region as individual agents according to different rules. (***citation SUMO guide or similar***).
+For modeling and simulating an urban environment to test these changes a microscopic agent-based simulation approach is followed. With this in mind, a common framework applied to transportation modeling in cities called SUMO. This software can simulate virtually any element moving around a city or region as individual agents according to different rules.
 
 Additionally, this framework allows to run mesoscopic simulations based on a queueing: it is, instead of simulating every agent behavior independently as in an agent-based approach, every street segment is modeled as a queue of vehicles. (***citation of thesis ref***). This approach implies important performance improvements that can be used for simulating larger environments (i.e. an entire city). Consequently, for validating the results of the microsimulation a mesoscopic model is calibrated. It will be as well useful for being able to run larger scenarios more efficiently. 
 
@@ -82,14 +82,14 @@ Finally, a fourth network is included to account for a remarkable feature of the
 ### Demand
 
 For the creation of the demand, two different kinds of mobility need to be considered:
-* People whose origin and/or destination is within the represented area (i.e. people living and/or working within the network). This *endogenous* demand can be created using the activitygen routine included in SUMO (***SUMO ref activity gen***) from general demographic data.
+* People whose origin and/or destination is within the represented area (i.e. people living and/or working within the network). This *endogenous* demand can be created using the activitygen routine included in SUMO from general demographic data.
 * People exclusively crossing the modeled area (i.e. people who are moving around the city, whose destination is somewhere else out of the represented part of the city). This passing through traffic can be modeled from AADT available data.
 
 In general, the regular grid of the city of Barcelona encompasses core urban districts and more residential, suburbial, and even industrial areas whose traffic demands vary largely. In this case, for the considered area, we are assuming that it belongs to a central part of the city which implied higher density of population, of economic activity, of jobs position, and in general of traffic levels (because of inner demand, and passing by population).
 
 Very similarly to the network creation process, we generalize the transportation demand for an equivalent area of the city to the modeled 1.44km<sup>2</sup> urban square without representing any concrete neighborhood of the city of Barcelona.
 
-In the case of the transport demand created by *activitygen*, it needs basic demographic data which is extrapolated and generalized for the modeled network area (1.44km<sup>2</sup>) based on the Eixample district in Barcelona (7.46km<sup>2</sup>) (***sources of data for the city council of BCN***). This area matches approximately the assumption of the expected mobility intensity for a central part of Barcelona. As a result, the following population statistics are assumed for the modeled area:
+In the case of the transport demand created by *activitygen*, it needs basic demographic data which is extrapolated and generalized for the modeled network area (1.44km<sup>2</sup>) based on the Eixample district in Barcelona (7.46km<sup>2</sup>). This area matches approximately the assumption of the expected mobility intensity for a central part of Barcelona. As a result, the following population statistics are assumed for the modeled area:
 
 - 51.120 inhabitant in the area (355 hab/ha x 144 ha)
 - 2,4 persons per household
@@ -123,7 +123,7 @@ Finally, these total daily values can be adjusted to an hourly distribution of t
 
 As a result, a total of 315000 vehicles are included into the simulation by adding the vehicles from the endogenous demand and the driving through traffic.
 
-The initial validation of this demand modeling is performed immediately by comparing the outcomes of the hourly histogram of modeled trips to the measured total trips by the metropolitan authorities in Barcelona (***ref 1***) and the expected counting of vehicles in a similar area from the real AADT (***ref 2***).
+The initial validation of this demand modeling is performed immediately by comparing the outcomes of the hourly histogram of modeled trips to the measured total trips by the metropolitan authorities in Barcelona and the expected counting of vehicles in a similar area from the real AADT.
 
 ## Expected Results
 
@@ -134,10 +134,29 @@ Running this model with different demand scaling will allow to test the behavior
 
 ## References 
 
-(Add the bibliographic references you intend to use)
-(Explain possible extension to the above models)
-(Code / Projects Reports of the previous year)
+[1] Ajuntament de Barcelona. Dades basiques de mobilitat 2015. Technical report, Ajuntament de Barcelona, Barcelona, 2016.
+[2] Ajuntament de Barcelona. Superficie y densidad de los distritos y barrios. 2018. Technical report, 2018.
+[3] Area de Barcelona. Autoritat del Transport Metropolitana, Ajuntament de Barcelona, Area Metropolitana de Barcelona, Associació de Municipis per la Mobilitat i el Transport Urbá, and IDESCAT. Enquesta de Mobilitat en Dia Feiner 2019 (EMEF 2019). La mobilitat a Barcelona. Technical report, Barcelona, 2020.
+[4] S. A. Bagloee, A. (Avi) Ceder, M. Sarvi, and M. Asadi. Is it time to go for no-car zone policies? Braess Paradox Detection. Transportation Research Part A: Policy and Practice, 121:251{264, mar 2019.
+[5] M. Bausells. Superblocks to the rescue: Barcelona's plan to give streets back to residents. The Guardian, may 2016.
+[6] Bestiario Proyectos S.L. and Regidoria de Mobilitat Ajuntament de Barcelona. Commuting i dinàmiques de mobilitat als 73 barris de Barcelona: una nova cartografía utilitzant les dades de la senyal de telefonia mòbil. Technical report, 2014.
 
+[7]  P. Blundell-Jones, D. Petrescu, and J. Till. Architecture and participation. Spon Press, 2005.
+[8]  D. Braess. uber    ein    Paradoxon    aus    der    Verkehrsplanung. Unternehmensforschung, (12):258–268, 1969.
+[9]  I.  Cerdà.   Teoría  general  de  la  urbanización,  y  aplicación  de  sus  principios  y doctrinas a la reforma y ensanche de Barcelona, 1867.
+[10]  C. I. d. M. (CIAM).  La Chartre d’Athènes.  The Library of the Graduate School of Design, Harvard University, Paris, 1933.
+[11]  Departament d’Anàlisi Oficina Municipal de Dades. Ajuntament de Barcelona. La conjuntura economica de Barcelona. Eixample. Technical report, Ajuntament de Barcelona, Barcelona, 2020.
+[12]  N.  G.  Eissfeldt.   Vehicle-based modelling of traffic. Theory and application to environmental impact modelling.  PhD thesis, Universität zu Köln, 2004.
+[13]  N.  Geroliminis  and  C.  F.  Daganzo.  Existence  of  urban-scale  macroscopic  fundamental diagrams:  Some experimental findings.  Transportation Research Part B: Methodological, 42(9):759–770, nov 2008.
+[14]  W. Hu.  What New York Can Learn From Barcelona’s ‘Superblocks’.  The New York Times, sep 2016.
+[15]  P.  A.  Lopez,   M.  Behrisch,   L.  Bieker-Walz,   J.  Erdmann,   Y.  P.  Flotterod, R.  Hilbrich,  L.  Lucken,  J.  Rummel,  P.  Wagner,  and  E.  Wiebner.  Microscopic Traffic 
+Simulation using SUMO.  In IEEE Conference on Intelligent Transporta- tion Systems, Proceedings, ITSC, volume 2018-Novem, pages 2575–2582. IEEE, nov 2018.
+[16]  S. Morel.  Avec ses ”supermanzanas”, Barcelone rend l’espace public à ses habitants.  Le Monde. Cities., dec 2019.
+[17]  A.  Plaza.   José  Mansilla:   ”La  crisis  mercantilizará  más  la  ciudad:   quitamos coches  pero  no  ganamos  suelo,  se  lo  queda  el  del  bar  para  hacer  dinero”.   El Diario, 2020.
+[18]  S.  Rueda.   Superblocks  for  the  design  of  new  cities  and  renovation  of  existing ones:  Barcelona’s case.  In Integrating Human Health into Urban and Transport Planning:  A Framework, pages 135–153. Springer International Publishing, jul 2018.
+[19]  X. Wang, S. You, and L. Wang.  Classifying road network patterns using multinomial logit model.  Journal of Transport Geography, 58:104–112, jan 2017.
+[20]  C. Wiedeman.  Politik in Barcelona:  Die Insel der Hoffnung.  Frankfurter Allge- meine Zeitung. Die Digitale Stadt., nov 2018.
+[21]  L.  Zhang  and  M.  Menendez. Modeling  and  Evaluating  the  Impact  of  City Block  Size on  Traffic  Performance.   Journal of Urban Planning and Development, 146(3):04020021, sep 2020.
 
 
 ## Other
