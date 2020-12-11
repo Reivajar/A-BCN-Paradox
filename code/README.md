@@ -5,13 +5,17 @@ This folder contains the necessary files for reproducing the simulations.
 * **simulations**  
 	* **charts**: results charts from notebooks *results_processing_{...}.ipynb*   
 	* **net01**  
-		* **data**  
+		* **data**
+		* *net01.ipynb*:  
 	* **net02**  
-		* **data**  
+		* **data**
+		* *net02.ipynb*: 
 	* **net03**  
-		* **data**  
+		* **data**
+		* *net03.ipynb*:  
 	* **net04**  
-		* **data**  
+		* **data**
+		* *net04.ipynb*: 
 * *results_processing_meso_compar01-02-03.ipynb*
 * *results_processing_meso_trial01.ipynb*
 * *results_processing_meso_trial02.ipynb*
