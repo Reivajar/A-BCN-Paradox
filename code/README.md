@@ -20,5 +20,5 @@ This folder contains the necessary files for reproducing the simulations.
 * *results_processing_meso_trial01.ipynb*
 * *results_processing_meso_trial02.ipynb*
 * *results_processing_meso_trial03.ipynb*
-* *results_processing_micro.ipynb*
+* *results_processing_micro.ipynb*: Python notebook for results processing and viz from microscopic simulations for all nets.
 
