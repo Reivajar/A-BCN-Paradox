@@ -4,7 +4,13 @@
 > * Group participants names: Argota Sanchez-Vaquerizo, Javier & Schwarzenbach, Daniel 
 > * Project Title: Suboptimal Traffic Efficiency in Changing Habitats (SOTECH). *A Barcelona Paradox*
 
-[Markdown - Link](#references)
+[General Introduction](#general-introduction)
+[Fundamental Questions](#fundamental-questions)
+[Research Methods](#research-methods)
+[The Model](#the-model)
+[Expected Results](#expected-results)
+[References](#references)
+[Other](#other): See for technical requirements and installation instructions.
 
 ## Abstract
 
