@@ -12,7 +12,7 @@ This folder contains the necessary files for reproducing the simulations.
 			* *activitygen-bcn_06.rou.xml*: routes definitions from trips from activitygen for network 01.
 			* *activitygen-bcn_06.rou.alt.xml*: alternative routes definitions from trips from activitygen for network 01.    
 			* *init_edgedata_additional_file.xml*: config. for additional output data for micro simulation called by *compar_002.sumo.cfg*.        
-			* *init_edgedata_additional_file_meso.xml*: config. for additional output data for meso simulation called by *compar_002_meso.sumo.cfg*.   
+			* *init_edgedata_additional_file_meso.xml*: config. for additional output for meso simulation called by *compar_002_meso.sumo.cfg*.   
 			* *compar_002.sumo.cfg*: configuration file for launching microscopic simulation.            
 			* *compar_002_meso.sumo.cfg*: configuration file for launching mesoscopic simulation.          
 			
