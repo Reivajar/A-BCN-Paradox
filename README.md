@@ -4,7 +4,7 @@
 > * Group participants names: Argota Sanchez-Vaquerizo, Javier & Schwarzenbach, Daniel 
 > * Project Title: Suboptimal Traffic Efficiency in Changing Habitats (SOTECH). *A Barcelona Paradox*
 
-link: [References] (#References)
+[Markdown - Link](#references)
 
 ## Abstract
 
@@ -134,7 +134,7 @@ Running this model with different demand scaling will allow to test the behavior
 - To detect one positive effect of the Brass Paradox in traffic (it is, to identify one situation where reducing streets can improve traffic overall).
  
 
-## References (#references)
+## References
 
 [1] Ajuntament de Barcelona. Dades basiques de mobilitat 2015. Technical report, Ajuntament de Barcelona, Barcelona, 2016.
 
