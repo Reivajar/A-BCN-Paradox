@@ -191,6 +191,9 @@ Note: It is needed to install SUMO software for being able to run all the script
 
 **It is important to make sure that the environment paths are correctly assigned for the scripts to be able to run**. See details inside notebooks
 
-* [**code**](https://github.com/Reivajar/A-BCN-Paradox/tree/master/code) folder contains all the necessary files for reproducing the results.
-* 
+* [**code**](https://github.com/Reivajar/A-BCN-Paradox/tree/master/code) contains all the necessary files for reproducing the results.
+* [**doc**](https://github.com/Reivajar/A-BCN-Paradox/tree/master/doc) contains reporting files.
+* [**other**](https://github.com/Reivajar/A-BCN-Paradox/tree/master/other) contains linked images to readme.
+* [**presentation**](https://github.com/Reivajar/A-BCN-Paradox/tree/master/presentation) contains presentation files from 23.11.2020.
+* [**videos**](https://github.com/Reivajar/A-BCN-Paradox/tree/master/videos) contains animated GIFS from the simulations.
 
