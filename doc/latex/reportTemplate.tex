@@ -339,8 +339,7 @@ These results from the microscopic simulation are qualitatively validated by the
 \end{figure}
 
 Two main conclusions can be drawn from these results. Firstly, one of the original claims of the superblocks plan for Barcelona regarding the keeping of the level of service \citep{Rueda2018} is not supported by the simulations data. Mostly the opposite, there is a clear drop of capacity for the network. Even the reduction of capacity is proportionally greater than the reduction of kilometers of lanes in the network.
-Secondly, we show a clear example of the Braess paradox in network 4: the addition of new links in a network causes a drop of the general performance of the network.  
-
+Secondly, we show a clear example of the Braess paradox in network 4: the addition of new links in a network causes a drop of the general performance of the network. We should rather propose to close down the diagonal links of the city for gaining livable spaces and preserving level of service for traffic (if not improving it) simultaneously.  
 \begin{figure}[htbp!]
 \centering
 \includegraphics[width=\textwidth]{code/simulations/charts/MFD01_compar_micro-meso.png}
@@ -359,33 +358,37 @@ The proposed models are a first approximation to a realistic urban environment. 
     \item Although all the proposed networks are closely inspired by the Barcelona regular urban fabric, it is a simplified and ideal version of it.
     \item Only mobility served by private vehicles is simulated. No public transit or pedestrian mobility, and their interactions, are included.
     \item All the vehicles belongs to the same class. No trucks, different kind of cars, or in general other types of vehicles are simulated.
-    \item Different simulation parameters could be tested, both in microscopic and mesoscopic modes.
+    \item Different microscopic and mesoscopic simulation parameters could be tested.
     \item There is no dynamic rerouting during the simulation, which ignores the much more complex decision making and route choosing by drivers and users under real traffic circumstances.
     \item Every intersection controlled by traffic lights have the same constant pattern. There is no signage optimization or adaptation.
     \item Origin-destination information is not available, as part of the ideal modeling of the network, so more precise routing is not possible.
 \end{itemize}
 
-\subsection{Discussion}
-Simulation, if used strategically, can be a very useful resource for evaluating, testing, and even envision intervention in cities. In this experiment we propose an initial simple approximation to evaluate a well-known and, at this point, accepted urban strategy for the city of Barcelona.
-Three main topics are covered by this project:
-\begin{itemize}
-\setlength\itemsep{0.05em}
-    \item Addressing the lack of precise measuring of urban phenomena that can provide understandable insights and knowledge useful for informed decision making.
-    \item Analyzing transportation networks from a topology perspective \citep{Wang2017}.
-    \item Using the Braess Paradox effect in a beneficial way for orienting interventions tactically.
-\end{itemize}
-More generally, the predictability of effects of changes in transportation networks and urban fabrics is not trivial or obvious. The immediate analysis and assumptions is not able to foresee the expected results of these changes from the typical metrics and factors that we consider, such as number of streets, lanes, or control of intersections. This hinders the capability for efficiently intervene in the urban space. It limits a real evaluation of possibilities and the exploration of the design space.
+\subsection{Future work}
 
-\section{Summary and Outlook}
-
-From an analytical point of view, a fundamental question remains open: which network features are the one affecting the performance of the network. In other words, can we identify the easy-to-assess network features that are able to predict the performance? The typical metrics are not enough. In this sense, a multiple representation of the street network (i.e. axial maps, dual graphs, etc.) may be crucial for grasping relevant relationships. Potentially, it would simplify the assessment of network without requiring full simulations. This task can be closely related to the utilization of Braess Paradox for positive smart decision making in planning in the so named Braess Paradox Detection Problem \citep{Bagloee2019}.
+From an analytical point of view, a fundamental question remains open: which network features are relevant for the performance of the network. Can we identify the easy-to-assess network features that are able to predict the performance? The typical metrics are not enough. In this sense, a multiple representation of the street network (i.e. axial maps, dual graphs, etc.) may be crucial for grasping relevant relationships. Potentially, it would simplify the assessment of networks without requiring full simulations. This task can be closely related to the opportunistic utilization of Braess Paradox for informed decision making in planning \citep{Bagloee2019}.
 
 The simulations implementation allows further exploration regarding some invariants, such as keeping the length of lanes within the netwkork \citep{Xie2007}. The simplifications included into the presented experiments leaves room for increasing the sophistication of the models. Route choice by drivers is not a trivial issue. On one hand a dynamic updating of routing could be implemented for taking into account the changing congestion conditions of the network, together with the use of alternative routing algorithms, trying to converge to an user equilibrium through simulation iteration\footnote{See \url{https://sumo.dlr.de/docs/Demand/Dynamic_User_Assignment.html}} or trying to implement reinforcement learning to agents' behavior. The simplistic approach towards intersections control would be as well another focal point to improvement. All of these interventions could potentially attenuate the effects of the Braess Paradox, as it is caused by a limited availability of information about the state of the network and a purely selfishly individualistic behavior of agents.
 
 For growing the model and seeking for applications on real settings beyond analytical purposes, the development of a pipeline for gathering real world data is needed (i.e. importing real transportation networks, mobility, population, and economic activity information, among others). A real implementation on an existing network, as the envisioned one for the urban fabric of Barcelona, would allow to evaluate with real data the results of simulations. As well, it would make possible to create usable frameworks for informed decision making in cities, accessible to experts and citizens.
 
+\section{Summary and Outlook}
+Simulation, if used strategically, can be a very powerful resource for evaluating, testing, and even envision intervention in cities. In this experiment we propose a simple approximation to evaluate the well-known urban strategy of Superblocks for the city of Barcelona from a Braess Paradox detection perspective. As a result:
+\begin{itemize}
+\setlength\itemsep{0.05em}
+    \item We reject the expected null effect in level of service from traffic from the superblocks plan.
+    \item We identify a counter-intuitive alternative planning proposal of reducing space for private vehicles with a positive effect in traffic, by closing diagonal axes.
+\end{itemize}
+Three are the goals that orient this project:
+\begin{itemize}
+\setlength\itemsep{0.05em}
+    \item Addressing the lack of precise measuring of urban phenomena that can provide understandable insights and knowledge useful for informed decision making.
+    \item Analyzing transportation networks from a topology perspective \citep{Wang2017}.
+    \item Using tactically the Braess Paradox effects for orienting interventions.
+\end{itemize}
+More generally, the predictability of effects of changes in transportation networks and urban fabrics is not trivial or obvious. The immediate analysis and assumptions is not able to foresee the expected results of these changes from the typical metrics and factors that we consider, such as number of streets, lanes, or control of intersections. This hinders the capability for efficiently intervene in the urban space. It limits a real evaluation of possibilities and the exploration of the design space.
 
-\bibliographystyle{plain}
+\bibliographystyle{abbrv}
 \bibliography{references}
 
 
