@@ -16,9 +16,9 @@ This folder contains the necessary files for reproducing the simulations.
 	* **net04**  
 		* **data**
 		* *net04.ipynb*: Python notebook for simulations for network 4.
-* *results_processing_meso_compar01-02-03.ipynb*
-* *results_processing_meso_trial01.ipynb*
-* *results_processing_meso_trial02.ipynb*
-* *results_processing_meso_trial03.ipynb*
+* *results_processing_meso_compar01-02-03.ipynb*: Python notebook for comparison of all simulations (micro- and mesoscopic) for all nets.
+* *results_processing_meso_trial01.ipynb*: Python notebook for results processing and viz from mesoscopic simulations 01 for all nets.
+* *results_processing_meso_trial02.ipynb*: Python notebook for results processing and viz from mesoscopic simulations 02 for all nets.
+* *results_processing_meso_trial03.ipynb*: Python notebook for results processing and viz from mesoscopic simulations 03 for all nets.
 * *results_processing_micro.ipynb*: Python notebook for results processing and viz from microscopic simulations for all nets.
 
