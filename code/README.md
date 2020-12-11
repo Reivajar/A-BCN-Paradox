@@ -16,8 +16,8 @@ This folder contains the necessary files for reproducing the simulations.
 			* *compar_002.sumo.cfg*: configuration file for launching microscopic simulation.
 			* *compar_002_meso.sumo.cfg*: configuration file for launching mesoscopic simulation.          	
 		* *net01.ipynb*: Python notebook for running simulations for network 1.
-	* **net02**  
-		* **data**
+	* [**net02**](https://github.com/Reivajar/A-BCN-Paradox/tree/master/code/simulations/net02)  
+		* [**data**](https://github.com/Reivajar/A-BCN-Paradox/tree/master/code/simulations/net02/data)
 			* *grid01-bcn_10.net.xml*: network 02 XML file for SUMO.
 			* *activitygen-bcn_10.stat.xml*: activitygen configuration file with demographic data for network 02.
 			* *activitygen-bcn_10.trips.rou.xml*: resulting trips file from activitygen for network 02.
@@ -28,8 +28,8 @@ This folder contains the necessary files for reproducing the simulations.
 			* *compar_032.sumo.cfg*: configuration file for launching microscopic simulation.
 			* *compar_032_meso.sumo.cfg*: configuration file for launching mesoscopic simulation.
 		* *net02.ipynb*: Python notebook for running simulations for network 2.
-	* **net03**  
-		* **data**
+	* [**net03**](https://github.com/Reivajar/A-BCN-Paradox/tree/master/code/simulations/net03)  
+		* [**data**](https://github.com/Reivajar/A-BCN-Paradox/tree/master/code/simulations/net03/data)
 			* *grid01-bcn_50.net.xml*: network 03 XML file for SUMO.
 			* *activitygen-bcn_50.stat.xml*: activitygen configuration file with demographic data for network 03.
 			* *activitygen-bcn_50.trips.rou.xml*: resulting trips file from activitygen for network 03.
@@ -40,8 +40,8 @@ This folder contains the necessary files for reproducing the simulations.
 			* *compar_052.sumo.cfg*: configuration file for launching microscopic simulation.
 			* *compar_052_meso.sumo.cfg*: configuration file for launching mesoscopic simulation.
 		* *net03.ipynb*: Python notebook for running simulations for network 3.
-	* **net04**  
-		* **data**
+	* [**net04**](https://github.com/Reivajar/A-BCN-Paradox/tree/master/code/simulations/net04)  
+		* [**data**](https://github.com/Reivajar/A-BCN-Paradox/tree/master/code/simulations/net04/data)
 			* *grid01-bcn_100.net.xml*: network 04 XML file for SUMO.
 			* *activitygen-bcn_100.stat.xml*: activitygen configuration file with demographic data for network 04.
 			* *activitygen-bcn_100.trips.rou.xml*: resulting trips file from activitygen for network 04.
