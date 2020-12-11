@@ -192,7 +192,7 @@ Note: It is needed to install SUMO software for being able to run all the script
 **It is important to make sure that the environment paths are correctly assigned for the scripts to be able to run**. See details inside notebooks
 
 **Make sure that the SUMO_HOME environment variable is correctly set after installation:**
-SUMO_HOME = r"C:\Program Files (x86)\Eclipse\Sumo"
+```SUMO_HOME = r"C:\Program Files (x86)\Eclipse\Sumo"```
 
 ### Contents of repository folders
 
