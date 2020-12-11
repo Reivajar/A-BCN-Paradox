@@ -5,13 +5,13 @@ This folder contains the necessary files for reproducing the simulations.
 **simulations**  
 |&mdash; **charts**   
 |&mdash; **net01**  
-| 	|&mdash; **data**  
+|&nbsp;|&mdash; **data**  
 |&mdash; **net02**  
-| 	|&mdash; **data**  
+|&nbsp;|&mdash; **data**  
 |&mdash; **net03**  
-|	|&mdash; **data**  
+|&nbsp;|&mdash; **data**  
 |&mdash; **net04**  
-| 	|&mdash; **data**  
+|&nbsp;|&mdash; **data**  
 * *results_processing_meso_compar01-02-03.ipynb*
 * *results_processing_meso_trial01.ipynb*
 * *results_processing_meso_trial02.ipynb*
