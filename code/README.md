@@ -3,7 +3,7 @@
 This folder contains the necessary files for reproducing the simulations.
 
 * **simulations**  
-	* **charts**: images results charts from notebooks *results_processing_{...}.ipynb*   
+	* [**charts**](https://github.com/Reivajar/A-BCN-Paradox/tree/master/code/simulations/charts): images results charts from notebooks *results_processing_{...}.ipynb*   
 	* **net01**  
 		* **data**
 			* *grid01-bcn_06.net.xml*: network 01 XML file for SUMO.
