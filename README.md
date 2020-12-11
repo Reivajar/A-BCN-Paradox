@@ -135,27 +135,45 @@ Running this model with different demand scaling will allow to test the behavior
 ## References 
 
 [1] Ajuntament de Barcelona. Dades basiques de mobilitat 2015. Technical report, Ajuntament de Barcelona, Barcelona, 2016.
+
 [2] Ajuntament de Barcelona. Superficie y densidad de los distritos y barrios. 2018. Technical report, 2018.
+
 [3] Area de Barcelona. Autoritat del Transport Metropolitana, Ajuntament de Barcelona, Area Metropolitana de Barcelona, Associació de Municipis per la Mobilitat i el Transport Urbá, and IDESCAT. Enquesta de Mobilitat en Dia Feiner 2019 (EMEF 2019). La mobilitat a Barcelona. Technical report, Barcelona, 2020.
+
 [4] S. A. Bagloee, A. (Avi) Ceder, M. Sarvi, and M. Asadi. Is it time to go for no-car zone policies? Braess Paradox Detection. Transportation Research Part A: Policy and Practice, 121:251{264, mar 2019.
+
 [5] M. Bausells. Superblocks to the rescue: Barcelona's plan to give streets back to residents. The Guardian, may 2016.
+
 [6] Bestiario Proyectos S.L. and Regidoria de Mobilitat Ajuntament de Barcelona. Commuting i dinàmiques de mobilitat als 73 barris de Barcelona: una nova cartografía utilitzant les dades de la senyal de telefonia mòbil. Technical report, 2014.
 
 [7]  P. Blundell-Jones, D. Petrescu, and J. Till. Architecture and participation. Spon Press, 2005.
+
 [8]  D. Braess. uber    ein    Paradoxon    aus    der    Verkehrsplanung. Unternehmensforschung, (12):258–268, 1969.
+
 [9]  I.  Cerdà.   Teoría  general  de  la  urbanización,  y  aplicación  de  sus  principios  y doctrinas a la reforma y ensanche de Barcelona, 1867.
+
 [10]  C. I. d. M. (CIAM).  La Chartre d’Athènes.  The Library of the Graduate School of Design, Harvard University, Paris, 1933.
+
 [11]  Departament d’Anàlisi Oficina Municipal de Dades. Ajuntament de Barcelona. La conjuntura economica de Barcelona. Eixample. Technical report, Ajuntament de Barcelona, Barcelona, 2020.
+
 [12]  N.  G.  Eissfeldt.   Vehicle-based modelling of traffic. Theory and application to environmental impact modelling.  PhD thesis, Universität zu Köln, 2004.
+
 [13]  N.  Geroliminis  and  C.  F.  Daganzo.  Existence  of  urban-scale  macroscopic  fundamental diagrams:  Some experimental findings.  Transportation Research Part B: Methodological, 42(9):759–770, nov 2008.
+
 [14]  W. Hu.  What New York Can Learn From Barcelona’s ‘Superblocks’.  The New York Times, sep 2016.
-[15]  P.  A.  Lopez,   M.  Behrisch,   L.  Bieker-Walz,   J.  Erdmann,   Y.  P.  Flotterod, R.  Hilbrich,  L.  Lucken,  J.  Rummel,  P.  Wagner,  and  E.  Wiebner.  Microscopic Traffic 
-Simulation using SUMO.  In IEEE Conference on Intelligent Transporta- tion Systems, Proceedings, ITSC, volume 2018-Novem, pages 2575–2582. IEEE, nov 2018.
+
+[15]  P.  A.  Lopez,   M.  Behrisch,   L.  Bieker-Walz,   J.  Erdmann,   Y.  P.  Flotterod, R.  Hilbrich,  L.  Lucken,  J.  Rummel,  P.  Wagner,  and  E.  Wiebner.  Microscopic Traffic Simulation using SUMO.  In IEEE Conference on Intelligent Transporta- tion Systems, Proceedings, ITSC, volume 2018-Novem, pages 2575–2582. IEEE, nov 2018.
+
 [16]  S. Morel.  Avec ses ”supermanzanas”, Barcelone rend l’espace public à ses habitants.  Le Monde. Cities., dec 2019.
+
 [17]  A.  Plaza.   José  Mansilla:   ”La  crisis  mercantilizará  más  la  ciudad:   quitamos coches  pero  no  ganamos  suelo,  se  lo  queda  el  del  bar  para  hacer  dinero”.   El Diario, 2020.
+
 [18]  S.  Rueda.   Superblocks  for  the  design  of  new  cities  and  renovation  of  existing ones:  Barcelona’s case.  In Integrating Human Health into Urban and Transport Planning:  A Framework, pages 135–153. Springer International Publishing, jul 2018.
+
 [19]  X. Wang, S. You, and L. Wang.  Classifying road network patterns using multinomial logit model.  Journal of Transport Geography, 58:104–112, jan 2017.
+
 [20]  C. Wiedeman.  Politik in Barcelona:  Die Insel der Hoffnung.  Frankfurter Allge- meine Zeitung. Die Digitale Stadt., nov 2018.
+
 [21]  L.  Zhang  and  M.  Menendez. Modeling  and  Evaluating  the  Impact  of  City Block  Size on  Traffic  Performance.   Journal of Urban Planning and Development, 146(3):04020021, sep 2020.
 
 
