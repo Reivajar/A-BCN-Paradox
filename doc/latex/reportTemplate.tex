@@ -7,6 +7,7 @@
 \usepackage{amssymb}
 \usepackage{epstopdf}
 \usepackage{natbib}
+\setlength{\bibsep}{0.0pt}
 \usepackage{amssymb, amsmath, bm}
 \usepackage{booktabs}
 \PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
@@ -35,7 +36,7 @@
 \bigskip
 
 
-\large We hereby agree to make our source code for this project freely available for download from the web pages of the SOMS chair. Furthermore, we assure that all source code is written by ourselves and is not violating any copyright restrictions.
+\large We hereby agree to make our source code for this project freely available for download from the web pages of the COSS chair. Furthermore, we assure that all source code is written by ourselves and is not violating any copyright restrictions.
 
 \begin{center}
 
@@ -91,6 +92,7 @@ Following the evolution of last urban trends in re-purposing the public space fo
 \section{Individual contributions}
 
 \begin{itemize}
+\setlength\itemsep{0.05em}
     \item Javier Argota Sánchez-Vaquerizo was in charge of the data collection and model design and implementation.
     \item Daniel Schwarzenbach reviewed existing Braess Paradox literature and prepared the presentation.
 \end{itemize}
@@ -101,15 +103,15 @@ Following the evolution of last urban trends in re-purposing the public space fo
 
 Utilitarian traffic optimization goals has dominated transport engineering since it appears as a proper discipline with the rise of private motorized vehicles. It has shaped our industrial and post-industrial cities that we inhabit. Modern Urbanism, as we understand it nowadays, sinks its roots at into a revolutionary scientific and technical approach towards the understanding of urban environment conditions and the efficient distribution of people, good, and resources around the city \citep{Cerda1867}. Even Modernist urban planners and architects in the early 1900's endorsed a radical mechanistic understanding of cities \citep{CIAM1933}. However, this scientific and positivist approach of traffic engineers contradicts the common practice in urban and city planning. Spatial planning, urban design, and collateral disciplines in the same realm, are affected by a combination of experimental data, domain expertise, ideology, and policy and political constraints in a non-straightforward decision making process in which opposed agendas promoted by different stakeholders are leverage to reach ideally a feasible compromise. In the best case scenario, many urban interventions are based on some domain expertise-backed intuition with the hope of eventually getting people's approval and political adoption.
 
-The understanding of complex effects of spatial planning decisions in cities is still very limited and scarcely applied to common practice. In this context, the assessment of urban interventions in cities frequently lacks evidence support. It undermines any possibility of evaluation of results, iterative process of potential improvement, and proper informed-decision making for technical experts, decision makers, and citizens in general. The later is particularly relevant as this lack of comprehensive information on the effects of planning decisions in cities dismisses the quality of participatory processes, by masking accessible knowledge to people, and making easier to manipulate these processes \citep{Blundell-Jones2005}\citep{Plaza2020}.
+The understanding of complex effects of spatial planning decisions in cities is still very limited and scarcely applied to common practice. In this context, the assessment of urban interventions in cities frequently lacks evidence support. It undermines any possibility of evaluation of results, iterative process of potential improvement, and proper informed-decision making for technical experts, decision makers, and citizens in general. The later is particularly relevant as this lack of comprehensive information on the effects of planning decisions in cities dismisses the quality of participatory processes, by masking accessible knowledge to people, and making easier to manipulate these processes \citep{Blundell-Jones2005, Plaza2020}.
 
 \subsection {Barcelona's Superblocks}
 
-This knowledge and methodological gap does not hinder experimentation and innovation in the most complex human creation \citep{Levi-Strauss1955} as cities are. In recent years, there is a clear trend on reducing the space reserved for private motor vehicles in cities to improve air quality and environmental conditions, to foster alternative transportation modes, or to reduce the use of fossil fuels (***citations would be good here*** and as well ***examples of these interventions***). Among these current trends on urban planning, Barcelona's Superblocks has been one of the most published in the last years \citep{Bausells2016, Hu2016, Morel2019, Wiedeman2018}. The Superblock's plan aims to reduce the space for the motor private vehicles in the street network to improve living conditions of city inhabitants by reducing noise and air-pollution and giving room to other transportation modes without a proportional drop-off in the circulation of vehicles for the same level of service \citep{Rueda2018}. It is being accomplished by creating large blocks of 3-by-3 of current square city blocks and leaving inside only loop-like residential streets. It means that 1 out of 3 streets of the city are left for driving through traffic. The well-known and a-thousands-of-times depicted idiosyncrasy of the so regular Barcelona grid comes together with a long tradition on public engagement on urban planning and experimentation in the city set an ideal scenario for testing out the unknown effect of these and other modifications in urban networks.
+In recent years, there is a clear trend on reducing the space reserved for private motor vehicles in cities to improve air quality and environmental conditions, to foster alternative transportation modes, or to reduce the use of fossil fuels. Among these current trends on urban planning, Barcelona's Superblocks has been one of the most published in the last years \citep{Bausells2016, Hu2016, Morel2019, Wiedeman2018}. The Superblock's plan aims to reduce the space for the motor private vehicles in the street network to improve living conditions of city inhabitants by reducing noise and air-pollution and giving room to other transportation modes without a proportional drop-off in the circulation of vehicles for the same level of service \citep{Rueda2018}. It is being accomplished by creating large blocks of 3-by-3 of current square city blocks and leaving inside only loop-like residential streets. It means that 1 out of 3 streets of the city are left for driving through traffic (figure~\ref{fig:Barcelona Superblocks schema}). The well-known and a-thousands-of-times depicted idiosyncrasy of the so regular Barcelona grid comes together with a long tradition on public engagement on urban planning and experimentation in the city set an ideal scenario for testing out the unknown effect of these and other modifications in urban networks.
 
 \begin{figure}[h]
 \centering
-\includegraphics[scale=0.5]{bcn_superblocks_rueda_2018.png}
+\includegraphics[scale=0.48]{bcn_superblocks_rueda_2018.png}
 \caption{Barcelona Superblocks schema \citep{Rueda2018}}
 \label{fig:Barcelona Superblocks schema}
 \end{figure}
@@ -121,6 +123,7 @@ Among one of the most interesting and intriguing effects that defies the common 
 \subsection {Research questions}
 
 \begin{itemize}
+\setlength\itemsep{0.05em}
     \item Are there too many streets for cars that actually are causing bigger congestion?
     \item If adding new roadways links leads to increased congestion, according to Braess, may removing streets for vehicles cause improvement of traffic, as expected by the Superblocks plan?
     \item Can we apply the counter-intuitive Braess’ Paradox effects for our own benefit in the planning of cities?
@@ -128,42 +131,43 @@ Among one of the most interesting and intriguing effects that defies the common 
 
 \subsection {Research Methods}
 
-For modeling and simulating an urban environment to test these changes, a microscopic agent-based simulation approach is used. SUMO is a common framework applied to transportation modeling in cities that implements among others enhancements, a car-following microscopic simulation model. This software can simulate virtually any element moving around a city or region as individual agents according to different rules \citep{Lopez2018}.
+For modeling an urban environment to test these changes, a microscopic agent-based simulation approach is used. SUMO is a common framework applied to transportation modeling in cities that implements among others enhancements, a car-following microscopic simulation model. This software can simulate virtually any element moving around a city or region as individual agents according to different rules \citep{Lopez2018}.
 
-Additionally, this software allows to run mesoscopic simulations based on a queueing approach: it is, instead of simulating every agent behavior independently as in an agent-based approach, every street segment is modeled as a queue of vehicles \citep{Eissfeldt2004}. This approach implies important performance improvements that can be used for simulating larger environments (i.e. an entire city). Consequently, for validating the results of the microsimulation a mesoscopic model is calibrated. It will be as well useful for being able to run larger scenarios more efficiently. 
+Additionally, this software allows to run mesoscopic simulations based on a queueing approach. Instead of simulating every agent behavior independently as in an agent-based approach, every street segment is modeled as a queue of vehicles \citep{Eissfeldt2004}. This approach implies important performance improvements that can be used for simulating larger environments (i.e. an entire city). Consequently, a mesoscopic model is calibrated to validate the microscopic simulation and to model larger environments. 
 
 \section{Description of the Model}
 
 In order to build a simulation in SUMO, two basic elements are needed as initial inputs:
 \begin{itemize}
+\setlength\itemsep{0.05em}
     \item A \textbf{network}, as the representation of the 'physical' environment where agents will move.
-    \item  A \textbf{demand} able to generate the movement between the different locations of the environment.
+    \item  A \textbf{demand} that generates the trips between locations of the environment.
 \end{itemize}
 
 \subsection {Network}
 
-The idea behind the used environment is to generalize and abstract the main features defining the regular urban grid of the Barcelona Eixample district. Any particular area of the city of Barcelona is modeled \textit{per se}, but just a representation of the most important features of the urban fabric. This is facilitated by the clear and straightforward ideas that back the Cerda's plan.
+The idea behind the used environment is to generalize and abstract the main features defining the regular urban grid of the Barcelona Eixample district. Any particular area of the city of Barcelona is modeled \textit{per se}, but just a representation of the most important features of the urban fabric. This is facilitated by the clear and straightforward ideas that oriented the Cerda's plan.
 
-An section of the city made of 9x9 Barcelona's blocks is used as the base environment. It is equivalent roughly to 1.44 km\textsuperscript{2}. Each squared block (or if preferred, the distance between the center of the streets intersections) is 133.33 m long. All the streets have the same width and importance (i.e. there is no hierarchy in the urban fabric) and they are one-way, two-lanes, with opposing directions from one block to the following one. Additionally each intersection is regulated with traffic lights whose whole cycle last 90 seconds\footnote{Whole sequence is: 42" GGGrrr, 3" yyyrrr, 42" rrrGGG, 3" rrryyy.}.
+A section of the city made of 9x9 Barcelona's blocks is used as the base environment. It is equivalent roughly to 1.44 km\textsuperscript{2}. Each squared block (the distance between the center of the streets intersections) is 133.33 m long. All the streets have the same width and importance (i.e. there is no hierarchy in the urban fabric) and they are one-way, two-lanes, with opposing directions from one block to the following one. Additionally each intersection is controlled with traffic lights whose whole cycle last 90 seconds\footnote{Whole sequence is: 42" GGGrrr, 3" yyyrrr, 42" rrrGGG, 3" rrryyy.}.
 
-This basic network with the aforementioned parameters represents an idealization or abstraction of the current functioning of the street network in Barcelona (net 1). It is used as the basis for the modified scenarios where different changes are introduced as follows.
+This basic network represents an idealization or abstraction of the current functioning of the street network in Barcelona (net 1). It is used as the basis for the modified scenarios where different changes are introduced as follows.
 
-Two different settings for superblocks are represented: one made of 2x2 superblocks, and another one with 3x3 superblocks. Both models have been implemented already as pilot project in recent urban refurbishments in the city of Barcelona, although the latter is the original proposed design. Both settings follow the same design principles: major streets separating superblocks are the only ones suitable for cross-city traffic, and their intersections are regulated by traffic lights. Inner streets within each superblock are transformed in residential streets suitable for just residential traffic and other types of transportation. More importantly, for the model design, they are designed as one-lane and one-way loops that do not allow to cross the superblock, which makes impossible cross-city traffic. Consequently, they result into nets 2 and 3.
+Two different settings for superblocks are represented: one made of 2x2 superblocks (network 2), and another one with 3x3 superblocks (network 3). Both models have been implemented already as pilot projects in recent urban interventions in Barcelona, although the latter is the original proposed design. Both settings follow the same principles: major streets separating superblocks are the only ones suitable for cross-city traffic, and their intersections are regulated by traffic lights. Inner streets within each superblock are turned into shared residential streets suitable only for residential traffic. More importantly, for the network implementation, they are designed as one-lane and one-way loops that do not allow to cross the superblock, which makes impossible driving-through traffic.
 
-Finally, a fourth network is included to account for a remarkable feature of the Barcelona grid: the number of diagonal streets that cut the orthogonal grid. For this purpose, the Diagonal Avenue is taken as a reference for capturing its main features to be added to the basic grid. As a result, a diagonal broad street with two-ways and two lanes per direction is added at and angle of 30°. This is net 4.
+Finally, a fourth network is included to account for a remarkable feature of the Barcelona grid: the number of diagonal streets that cut the orthogonal grid. For this purpose, the Diagonal Avenue is taken as a reference for capturing its main features to be added to the basic grid. As a result, a diagonal broad street with two-ways and two lanes per direction is added at and angle of 30° (figure~\ref{fig:4nets} and table~\ref{tab:1Nets-features}).
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\textwidth]{bcn_paradox_4nets.PNG}
 \caption{From left to right: Net 1 (basic network), net 2 (2x2 superblocks), net 3 (3x3 superblocks), and net 4 (with diagonal broad avenue).}
-\label{fig:From left to right: Net 1 (basic network), net 2 (2x2 superblocks), net 3 (3x3 superblocks), and net 4 (with diagonal broad avenue).}
+\label{fig:4nets}
 \end{figure}
 
 
 \begin{table}[htbp]
 \centering
 \caption{Main metrics for each network.}
-\label{tab:Nets-features}
+\label{tab:1Nets-features}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}rcccc@{}}
 \toprule
@@ -178,22 +182,23 @@ Number of intersections & 100 & 25 & 16 & 105 \\ \bottomrule
 
 \subsection {Demand}
 
-For the creation of the demand, two different kinds of mobility need to be considered:
+For the demand creation, two different kinds of mobility profiles are considered:
 \begin{itemize}
-    \item People whose origin and/or destination is within the represented area (i.e. people living and/or working within the network). This *endogenous* demand can be created using the ACTIVITYGEN tool included in SUMO from general demographic data \citep{Lopez2018}.
-    \item People exclusively crossing the modeled area (i.e. people who are moving around the city, whose destination is somewhere else out of the represented part of the city). This passing through traffic can be modeled from AADT available data.
+\setlength\itemsep{0.05em}
+    \item People whose origin and/or destination is within the modeled area (i.e. people living and/or working within the network). This \textit{endogenous} demand can be created using the ACTIVITYGEN tool included in SUMO from general demographic data \citep{Lopez2018}.
+    \item People exclusively crossing the modeled area (i.e. whose origin and destination is somewhere else out of the represented part of the city). This passing-through traffic can be modeled from available data.
 \end{itemize}
 
 In general, the regular grid of the city of Barcelona encompasses core urban districts and more residential, suburbial, and even industrial areas whose traffic demands vary largely. In this case, for the considered area, we are assuming that it belongs to a central part of the city which implied higher density of population, of economic activity, of jobs position, and in general of traffic levels (because of inner demand, and passing by population).
 
 Very similarly to the network creation process, we generalize the transportation demand for an equivalent area of the city to the modeled 1.44 km\textsuperscript{2} urban square without representing any concrete neighborhood of the city of Barcelona.
 
-In the case of the transport demand created by *activitygen*, it needs basic demographic data which is extrapolated and generalized for the modeled network area (1.44 km\textsuperscript{2}) based on the Eixample district in Barcelona (7.46 km\textsuperscript{2}) \citep{AjuntamentdeBarcelona2018, AreadeBarcelona.AutoritatdelTransportMetropolita2020, DepartamentdAnalisiOficinaMunicipaldeDades.AjuntamentdeBarcelona2020}. This area matches approximately the assumption of the expected mobility levels for a central part of Barcelona. As a result, the following population statistics are assumed for the modeled area and they are parsed into a XML configuration file (see code folder) required by the tool for generate the demand:
+In the case of the transport demand created by \textbf{activitygen}, it needs basic demographic data which is extrapolated and generalized for the modeled network area (1.44 km\textsuperscript{2}) based on the Eixample district in Barcelona (7.46 km\textsuperscript{2}) \citep{AjuntamentdeBarcelona2018, AreadeBarcelona.AutoritatdelTransportMetropolita2020, DepartamentdAnalisiOficinaMunicipaldeDades.AjuntamentdeBarcelona2020}. This area matches approximately the assumption of the expected mobility levels for a central part of Barcelona. As a result, the following population statistics are assumed for the modeled area and they are parsed into a XML configuration file (see code folder) required by the tool for generating the demand (table 2).
 
-\begin{table}[htbp]
+\begin{table}[h!]
 \centering
 \caption{Population statistics for the modeled area used in ACTIVITYGEN}
-\label{tab:pop-stats}
+\label{tab:2pop-stats}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}rll@{}}
 \toprule
@@ -211,52 +216,46 @@ metric &  & \textit{notes} \\ \midrule
 }
 \end{table}
 
-For generalizing the driving-through traffic three neighborhoods belonging to the Eixample district are chosen as a reference for their inbound and outbound mobility patterns (i.e. people who leave or enter the area in a daily basis) \citep{BestiarioProyectosS.L.2014}. They are the ones showing a more more complex and demanding dynamics: La Dreta de l'Eixample, l'Antiga Esquerra de l'Eixample, and la Nova Esquerra de l'Eixample.
+To generalize the driving-through traffic in the model, the mobility data from three neighborhoods belonging to the Eixample district are averaged and used as a reference for their inbound and outbound mobility patterns (i.e. people who letaave or enter the area in a daily basis) \citep{BestiarioProyectosS.L.2014} (table~\ref{tab:3hoods-ref}).
 
-\begin{table}[htbp]
+\begin{table}[htbp!]
 \centering
-\caption{Demographic and mobility data for reference neighborhoods.}
-\label{tab:hoods-ref}
+\caption{Demographic and mobility data from referenced neighborhoods and used in model.}
+\label{tab:3hoods-ref}
 \resizebox{\textwidth}{!}{%
-\begin{tabular}{@{}rccc@{}}
+\begin{tabular}{@{}rcccc@{}}
 \toprule
-Neighborhood & \textbf{Dreta de l'Eixample} & \textbf{\begin{tabular}[c]{@{}c@{}}L'Antiga Esquerra \\ de l'Eixample\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}La Nova Esquerra \\ de l'Eixample\end{tabular}} \\ \toprule
-Total population & 43449 & 42189 & 57889 \\ \midrule
-Area (km2) & 2.12 & 1.23 & 1.34 \\ \midrule
-Density (hab/km2) & 20500 & 34355 & 43200 \\ \midrule
-Outbound mobility (\% tot. pop.) & 30 & 32 & 32 \\ \midrule
-Inbound mobility (\% tot. pop.) & 138 & 66 & 32 \\ \bottomrule
+Neighborhood & \textbf{\begin{tabular}[c]{@{}c@{}}Dreta\\ de l'Eixample\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}L'Antiga Esquerra \\ de l'Eixample\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}La Nova Esquerra\\ de l'Eixample\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Simulation\\ model\end{tabular}} \\ \toprule
+Total population & 43449 & 42189 & 57889 & 51120 \\ \midrule
+Area ($km^2$) & 2.12 & 1.23 & 1.34 & 1.44 \\ \midrule
+Density ($hab/km^2$) & 20500 & 34355 & 43200 & 35000 \\ \midrule
+Outbound mobility (\% tot. pop.) & 30 & 32 & 32 & 31.4 \\ \midrule
+Inbound mobility (\% tot. pop.) & 138 & 66 & 32 & 74 \\ \bottomrule
 \end{tabular}%
 }
 \end{table}
 
-Averaging these mobility patterns, we can assume for the model:
-\begin{itemize}
-    \item Outbound mobility: 31.4\% of tot. population of the model
-    \item Inbound mobility: 74\% of tot. population of the model
-\end{itemize}
+Finally, these total daily values can be adjusted to an hourly distribution of trips during the day for generating random trips\footnote{See \url{ https://sumo.dlr.de/docs/Tools/Trip.html#randomtripspy.}} between the fringe edges (i.e. streets situated on the limit of the network that are used for entering and exiting the model). In this case the hourly distribution of the trips is obtained from the histogram generated by the ACTIVITYGEN tool used for the endogenous demand. 
 
-Finally, these total daily values can be adjusted to an hourly distribution of trips during the day for generating random trips (see randomTrips.py script from SUMO) between the fringe edges (i.e. streets situated on the limit of the network that are used for entering and exiting the model). In this case the hourly distribution of the trips is obtained from the histogram generated by the ACTIVITYGEN tool used for the endogenous demand. 
+As a result, a total of 315000 vehicles are included into the model by adding the vehicles from the endogenous demand and the driving through traffic. All these vehicles belong to the same vehicle type (\textit{passenger}\footnote{See \url{https://sumo.dlr.de/docs/Vehicle_Type_Parameter_Defaults.html}}). Consequently, other types of vehicles, such as public transit or pedestrians are not considered.
 
-As a result, a total of 315000 vehicles are included into the model by adding the vehicles from the endogenous demand and the driving through traffic.
-
-The initial validation of this demand modeling is performed immediately by comparing the outcomes of the hourly histogram of modeled trips to the measured total trips by the metropolitan authorities in Barcelona \citep{AreadeBarcelona.AutoritatdelTransportMetropolita2020} and the expected counting of vehicles in a similar area from the real AADT \citep{AjuntamentdeBarcelona2016}.
+The initial validation of this demand modeling is performed immediately by comparing the outcomes of the hourly histogram of modeled trips to the measured total trips by the metropolitan authorities in Barcelona \citep{AreadeBarcelona.AutoritatdelTransportMetropolita2020} and the expected counting of vehicles in a similar area from the real AADT\footnote{Annual Average Daily Traffic} \citep{AjuntamentdeBarcelona2016}.
 
 \section{Implementation}
 
-The proposed experiments assume that the demand does not change in each of the four designed networks. What changes is the topological and spatial features of the urban fabric represented by the four proposed networks, not the transportation demand which remains the same. 
+The proposed experiments assume that the transportation demand remains the same in each of the four designed networks. What changes is the topological and spatial features of the urban fabric represented by the four proposed networks. 
 
 In order to perform a wider sensitivity analysis and increase the scenarios considered, a scaling factor is applied to the demand. Using as a reference the scale factor of 1, equivalent to the demand modeling built from the real world data (i.e. 315000 vehicles extrapolated from the existing data), the simulation is run for each network 40 times, spanning from a scale of 0.05 (equivalent to a low demand case of only 15750 vehicles) up to a scale of 2.0 (which equals 630000 vehicles, the double of the current basic scenario), in increments of 0.05 (it is, adding 15750 vehicles). This approach allows to explore a large range of traffic demand levels and identify the different behavior that the proposed network can face under a diversity of situations.
 
-Additionally, to overcome some limitations of the model under very high levels of traffic, which lead to congestion and saturation, an additional correcting factor is introduced regarding the so-called "teleporting". It refers to a resource used by SUMO for overcoming congested situations by moving a vehicle in a jam if it stays stuck for longer than a given period of time ahead on its route. But even, with very intense levels of traffic teleporting cannot make enough room for all the allocated vehicles, and it can lead to grid-lock scenarios. Then, a finalization clause is introduced based on the number of teleports. If the simulation teleports more than the 0.5 \% of the total allocated vehicles, the simulations ends. It can be understood like a way of testing if the amount of vehicles exceeds clearly the capacity of the network, and it aborts the simulation consequently while capturing metrics from very congested scenarios.
+Additionally, to overcome some limitations of the model under very high levels of traffic, which lead to congestion, an additional correcting factor is introduced regarding the so-called \textit{teleporting}. It refers to the action of moving a vehicle in a jam if it stays stuck for longer than a given period of time ahead on its route. But even, with very intense levels of traffic teleporting cannot make enough room for all the allocated vehicles, and it can lead to grid-lock scenarios. Then, a finalization clause is introduced based on the number of teleports. If the simulation teleports more than the 0.5 \% of the total allocated vehicles, the simulations ends. It can be understood like a way of testing if the amount of vehicles exceeds clearly the capacity of the network, and it aborts the simulation consequently while capturing metrics from very congested scenarios.
 
-From each simulation run, macroscopic metrics at the lane level and at the whole network scale are extracted. \footnote{See code instructions and particularly, sumo.cfg configurations files where the additional files are called for generating the required output metrics at the lane level.}. The aggregated summary for the whole network are aimed to check the overall performance of the different simulations with different scaling factors on traffic demand \footnote{See visualization scripts. First optional routine for network performance is based in summary files.}. Complementary, the lane-based output files are used as the source data for building the Macroscopic Fundamental Diagram (MFD) \citep{Geroliminis2008}. For this purpose, metrics are generated every minute of simulation. It means, that every run of the simulation is sampled 3600 times, and every network is sampled about 30000 times \footnote{Mathematically, the theoretical number of total samples for the 40 runs in each network would be 72000. However, as high traffic intensity scenarios are aborted due to excess of teleporting, the final total number of samples is smaller.} for creating the MFD diagrams.
+From each simulation run, macroscopic metrics at the lane level and at the whole network scale are extracted\footnote{See code instructions and particularly, sumo.cfg configurations files where the additional files are called for generating the required output metrics at the lane level.}. The aggregated summary for the whole network are aimed to check the overall performance of the different simulations with different scaling factors on traffic demand\footnote{See visualization scripts. First optional routine for network performance is based in summary files.}. Complementary, the lane-based output files are used as the source data for building the Macroscopic Fundamental Diagram (MFD)\citep{Geroliminis2008}. For this purpose, metrics are generated every minute of simulation. It means, that every run of the simulation is sampled 3600 times, and every network is sampled about 30000 times\footnote{Mathematically, the theoretical number of total samples for the 40 runs in each network would be 72000. However, as high traffic intensity scenarios are aborted due to excess of teleporting, the final total number of samples is smaller.} for creating the MFD diagrams.
 
-The mesoscopic simulations performed for validation of the microscopic model, and for expansion to larger environments, follow the same general approach. However, they require calibration of the parameters involved in the queuing approach of their model \footnote{For further information, check \textit{3.2 General approach based on time-headways ($\mu-Queue$)} in \citep{Eissfeldt2004}} for matching the microscopic behavior. 
+The mesoscopic simulations performed for validation of the microscopic model, and for expansion to larger environments, follow the same general approach. However, they require calibration of the parameters of the queuing model\footnote{For further information, check \textit{3.2 General approach based on time-headways ($\mu-Queue$)} in \citep{Eissfeldt2004}} for matching the microscopic behavior (table~\ref{tab:meso-params}). 
 
 \begin{table}[htbp]
 \centering
-\caption{Parameters for mesoscopic simulation\footnotemark}
+\caption{Parameters for mesoscopic simulations\footnotemark}
 \label{tab:meso-params}
 \begin{tabular}{@{}rcccc@{}}
 \toprule
@@ -273,11 +272,11 @@ The mesoscopic simulations performed for validation of the microscopic model, an
 \end{tabular}
 \end{table}
 
-\footnotetext{Most of the adjustment has been based on heuristics, as it will be discussed later. However, some of the parameters chosen are based on the actual behavior of the microscopic simulation. For instance, the length of the segments is increased to 135 meters to ensure that the segments between intersections are not subdivided artificially, multi-lane is enforced, and junction-control approximates the behavior of actual traffic lights. For further information: https://sumo.dlr.de/docs/sumo.html#mesoscopic and https://sumo.dlr.de/docs/Simulation/Meso.html}
+\footnotetext{Most of the adjustment has been based on heuristics. However, some of the parameters are chosen based on the actual behavior of the microscopic simulation. For instance, the length of the segments is increased to 135 meters to ensure that the segments between intersections are not subdivided artificially, multi-lane is enforced, and junction-control approximates the behavior of actual traffic lights. For further information: https://sumo.dlr.de/docs/sumo.html#mesoscopic and https://sumo.dlr.de/docs/Simulation/Meso.html}
 
 Routing is computed only once, directly from the demand creation (see section \textit{4.2. Demand}) at the beginning of model configuration. It means that any kind of dynamic re-computation of optimal routes given traffic conditions in real-time is not implemented, meaning that alternative routes for avoiding traffic jams during the simulation are disregarded. 
 
-SUMO includes several routing algorithms\footnote{Dijikstra (the by-default setting), A*, and Contraction hierarchies in two different implementations. See: https://sumo.dlr.de/docs/Simulation/Routing.html} which are used for computing the routes from trips definitions. During the development of the simulation, all of them are tested both from the computation performance and the simulation results perspective. Finally, Contraction hierarchies are implemented for performance reasons, although Dijkstra provides equivalent results for the simulations.
+SUMO includes several routing algorithms\footnote{Dijikstra (the by-default setting), A*, and Contraction hierarchies in two different implementations. See: https://sumo.dlr.de/docs/Simulation/Routing.html} which are used for computing the routes from trips definitions. Contraction hierarchies is implemented for performance reasons, although Dijkstra provides equivalent results for the simulations.
 
 \section{Simulation Results and Discussion}
 \subsection{Metrics pre-processing}
@@ -288,7 +287,7 @@ Flow of vehicles per hour $\Phi$ at a given time \textit{t} of the simulation is
 \Phi _t = \frac{\frac{\sum_{i}^{n}(\Phi_{in(i)}^t+\Phi_{started(i)}^t)}{T}\times 3600}{n}
 \end{equation}
 
-where \testit{T} is the sampling period (60 seconds), \textit{n} is the number of edges in the network, $\Phi_{in(i)}^t$ is the number of vehicles that entered a given edge \textit{i} within the time period \textit{t}, and $\Phi_{started(i)}^t$ are the vehicles that started their trip from the given edge \textit{i} during \textit{t}.
+where \textit{T} is the sampling period (60 secs.), \textit{n} is the number of edges in the network, $\Phi_{in(i)}^t$ is the number of vehicles that entered a given edge \textit{i} within the time period \textit{t}, and $\Phi_{started(i)}^t$ are the vehicles that started their trip from the given edge \textit{i} during \textit{t}.
 The density of vehicles per km \textit{d} at a given time period \textit{t} of the simulation is
 \begin{equation}
     d_t= \frac{\frac{\sum_{n}^{i}Q_{i}^t}{T}}{L/1000}
@@ -303,24 +302,7 @@ where $\Phi_{max}$ is the maximum traffic flow, and $d_{\Phi_{max}}$ is the vehi
 
 \subsection{Results}
 
-% \begin{table}[htbp]
-% \centering
-% \caption{Results. Optimal points for each network simulation.}
-% \label{tab:results-tip-points}
-% \resizebox{\textwidth}{!}{%
-% \begin{tabular}{rcccc}
-% \toprule
-% \textbf{Network} & \textbf{Net 1} & \textbf{Net 2} & \textbf{Net 3} & \textbf{Net 4} \\ \toprule
-% \textit{Description} & \multicolumn{1}{r}{\textit{Basic network}} & \textit{2x2 superblocks} & \textit{3x3 superblocks} & \textit{w/ diagonal avenue} \\ \midrule
-% Max. flow ($\Phi_{max}$)(veh./h) & 989.1 & 555.8 & 372.8 & 438 \\ \midrule
-% Density at max. flow ($d_{\Phi_{max}}$)(veh./km) & 40.9 & 23.9 & 18.6 & 20.8 \\ \midrule
-% Optimal speed ($\bar{v}_{opt}$)(km/h) & 24.2 & 23.2 & 19.9 & 21.1 \\ \bottomrule
-% \end{tabular}%
-% }
-% \end{table}
-
-
-\begin{table}[htbp]
+\begin{table}[h!]
 \centering
 \caption{Results. Optimal points for each network simulation.}
 \label{tab:results-tip-points-all}
@@ -338,46 +320,75 @@ Model & Micro & \multicolumn{4}{c|}{Mesoscopic} & Micro & \multicolumn{4}{c|}{Me
 }
 \end{table}
 
-In general terms, the implementation of the superblocks layouts reduces the capacity of the network. However, when comparing the network data (see table 1) with the results (see table 5), we see that this reduction is not linearly proportional to the shrinkage of the typical metrics describing the networks. For the superblocks scenarios, the length of lanes is reduced a 32\% and 36\% and the number of intersections a 75\% and a 84\% respectively in networks 2 and 3. However, the maximum capacity of the network 2 drops 44\% and in network 3, 62\%.
-More interesting is the case in network 4, the one that added a diagonal shortcut across the grid. The increase of the length of lanes in a 9\% and a 5\% in ht number of intersections causes a drop of the total capacity of the network of a 56\%.
-These results from the microscopic simulation are qualitatively validated by the mesoscopic models, in the three different presented calibrations.
+In general terms, the implementation of the superblocks layouts reduces the capacity of the network. We focus on three main metrics: maximum flow ($\Phi_{max}$), density at maximum flow ($d_{\Phi_{max}}$), and optimal speed ($\bar{v}_{opt}$). However, when comparing the network data (table 1) with the results of the simulations (figure~\ref{fig:MFD of microscopic simulation for the four proposed networks.}), we see that this reduction is not linearly proportional to the shrinkage of the typical metrics describing the networks. For the superblocks scenarios, the length of lanes is reduced by 32\% and 36\% and the number of intersections by 75\% and 84\% respectively in networks 2 and 3. However, the maximum capacity of the network 2 drops by 44\% and by 62\% in network 3 (table 5).
 
-\begin{figure}[htbp]
+More interesting is the case in network 4, the one that added a diagonal shortcut across the grid. The increase of the length of lanes by 9\% and by 5\% in the number of intersections causes a drop of the total capacity of the network by 56\%.
+
+These results from the microscopic simulation are qualitatively validated by the mesoscopic models overall, in the three different calibrations presented (figure~\ref{fig:MFD-comp-micro-meso.}). However, it is important to notice two important differences in the mesoscopic results:
+\begin{itemize}
+\setlength\itemsep{0.05em}
+    \item The mesoscopic simulations tend to overestimate the capacity of the networks (measured by the maximum flow value).
+    \item The worst performing network (the one with a lowest capacity) in the mesoscopic simulations is network 4 (with diagonal avenue), not the network 3 (3x3 superblocks) as obtained by the microscopic model.
+\end{itemize}
+
+\begin{figure}[htbp!]
 \centering
 \includegraphics[width=\textwidth]{code/simulations/charts/MFD02_compar_01-02-03-04_micro.png}
-\caption{MFD of microscopic simulation for the four proposed networks.}
+\caption{MFD of microscopic simulation for the four networks, including demand scaling.}
 \label{fig:MFD of microscopic simulation for the four proposed networks.}
 \end{figure}
 
-\begin{figure}[htbp]
+Two main conclusions can be drawn from these results. Firstly, one of the original claims of the superblocks plan for Barcelona regarding the keeping of the level of service \citep{Rueda2018} is not supported by the simulations data. Mostly the opposite, there is a clear drop of capacity for the network. Even the reduction of capacity is proportionally greater than the reduction of kilometers of lanes in the network.
+Secondly, we show a clear example of the Braess paradox in network 4: the addition of new links in a network causes a drop of the general performance of the network. We should rather propose to close down the diagonal links of the city for gaining livable spaces and preserving level of service for traffic (if not improving it) simultaneously.  
+\begin{figure}[htbp!]
 \centering
 \includegraphics[width=\textwidth]{code/simulations/charts/MFD01_compar_micro-meso.png}
-\caption{MFD of microscopic simulation for the four proposed networks.}
-\label{fig:MFD of microscopic simulation for the four proposed networks.}
+\caption{Comparison of mesoscopic\footnotemark (left) and microscopic (right) MFDs.}
+\label{fig:MFD-comp-micro-meso.}
 \end{figure}
 
-
-% \begin{figure}[htbp]
-% \centering
-% \subfloat[\centering left]{{
-% \includegraphics[width=0.45\textwidth]{code/simulations/charts/MFD01_compar_01-02-03-04_meso_AGG_4_AVG.png}
-% }}%
-% \qquad
-% \subfloat[\centering left]{{
-% \includegraphics[width=0.45\textwidth]{code/simulations/charts/MFD01_compar_01-02-03-04_micro.png}
-% }}%
-
-% \caption{MFD of mesoscopic simulations for the four proposed networks.}
-% \label{fig:MFD of microscopic simulation for the four proposed networks.}
-% \end{figure}
+\footnotetext{The three models with different parametrization are represented by a thin line, and they have been aggregated in an averaged resulting mesoscopic model, plotted in a thicker line.}
 
 
+\subsection{Limitations}
+The proposed models are a first approximation to a realistic urban environment. It causes a number of limitations for the shake of simplification. Each of them are subject of future work and improvement.
 
+\begin{itemize}
+\setlength\itemsep{0.05em}
+    \item Although all the proposed networks are closely inspired by the Barcelona regular urban fabric, it is a simplified and ideal version of it.
+    \item Only mobility served by private vehicles is simulated. No public transit or pedestrian mobility, and their interactions, are included.
+    \item All the vehicles belongs to the same class. No trucks, different kind of cars, or in general other types of vehicles are simulated.
+    \item Different microscopic and mesoscopic simulation parameters could be tested.
+    \item There is no dynamic rerouting during the simulation, which ignores the much more complex decision making and route choosing by drivers and users under real traffic circumstances.
+    \item Every intersection controlled by traffic lights have the same constant pattern. There is no signage optimization or adaptation.
+    \item Origin-destination information is not available, as part of the ideal modeling of the network, so more precise routing is not possible.
+\end{itemize}
 
+\subsection{Future work}
+
+From an analytical point of view, a fundamental question remains open: which network features are relevant for the performance of the network. Can we identify the easy-to-assess network features that are able to predict the performance? The typical metrics are not enough. In this sense, a multiple representation of the street network (i.e. axial maps, dual graphs, etc.) may be crucial for grasping relevant relationships. Potentially, it would simplify the assessment of networks without requiring full simulations. This task can be closely related to the opportunistic utilization of Braess Paradox for informed decision making in planning \citep{Bagloee2019}.
+
+The simulations implementation allows further exploration regarding some invariants, such as keeping the length of lanes within the netwkork \citep{Zhang2020}. The simplifications included into the presented experiments leaves room for increasing the sophistication of the models. Route choice by drivers is not a trivial issue. On one hand a dynamic updating of routing could be implemented for taking into account the changing congestion conditions of the network, together with the use of alternative routing algorithms, trying to converge to an user equilibrium through simulation iteration\footnote{See \url{https://sumo.dlr.de/docs/Demand/Dynamic_User_Assignment.html}} or trying to implement reinforcement learning to agents' behavior. The simplistic approach towards intersections control would be as well another focal point to improvement. All of these interventions could potentially attenuate the effects of the Braess Paradox, as it is caused by a limited availability of information about the state of the network and a purely selfishly individualistic behavior of agents.
+
+For growing the model and seeking for applications on real settings beyond analytical purposes, the development of a pipeline for gathering real world data is needed (i.e. importing real transportation networks, mobility, population, and economic activity information, among others). A real implementation on an existing network, as the envisioned one for the urban fabric of Barcelona, would allow to evaluate with real data the results of simulations. As well, it would make possible to create usable frameworks for informed decision making in cities, accessible to experts and citizens.
 
 \section{Summary and Outlook}
+Simulation, if used strategically, can be a very powerful resource for evaluating, testing, and even envision intervention in cities. In this experiment we propose a simple approximation to evaluate the well-known urban strategy of Superblocks for the city of Barcelona from a Braess Paradox detection perspective. As a result:
+\begin{itemize}
+\setlength\itemsep{0.05em}
+    \item We reject the expected null effect in level of service from traffic from the superblocks plan.
+    \item We identify a counter-intuitive alternative planning proposal of reducing space for private vehicles with a positive effect in traffic, by closing diagonal axes.
+\end{itemize}
+Three are the goals that orient this project:
+\begin{itemize}
+\setlength\itemsep{0.05em}
+    \item Addressing the lack of precise measuring of urban phenomena that can provide understandable insights and knowledge useful for informed decision making.
+    \item Analyzing transportation networks from a topology perspective \citep{Wang2017}.
+    \item Using tactically the Braess Paradox effects for orienting interventions.
+\end{itemize}
+More generally, the predictability of effects of changes in transportation networks and urban fabrics is not trivial or obvious. The immediate analysis and assumptions is not able to foresee the expected results of these changes from the typical metrics and factors that we consider, such as number of streets, lanes, or control of intersections. This hinders the capability for efficiently intervene in the urban space. It limits a real evaluation of possibilities and the exploration of the design space.
 
-\bibliographystyle{plain}
+\bibliographystyle{abbrv}
 \bibliography{references}
 
 
