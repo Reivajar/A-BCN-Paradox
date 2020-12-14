@@ -202,7 +202,7 @@ Note: It is needed to install SUMO software for being able to run all the script
 For Windows the default should be something like this:  
 ```SUMO_HOME = r"C:\Program Files (x86)\Eclipse\Sumo"```
 
-**In general, run in terminal ```echo $SUMO_HOME```** should provide the installation path to be used in the code
+**In general, running in terminal ```echo $SUMO_HOME```** should provide the installation path to be used in the code (Jupyter notebooks).
 
 ### Python 3 Libraries
 
