@@ -191,12 +191,28 @@ Running this model with different demand scaling will allow to test the behavior
 
 ## Other
 
+### Installation
+
 Note: It is needed to install SUMO software for being able to run all the scripts and experiments. Additional information is provided into the code notes. For more information regarding the installation of SUMO visit: https://www.eclipse.org/sumo/
 
 **It is important to make sure that the environment paths are correctly assigned for the scripts to be able to run**. See details inside notebooks
 
-**Make sure that the SUMO_HOME environment variable is correctly set after installation!!!!:**  
+**Make sure that the SUMO_HOME environment variable is correctly set after installation!!!!:** 
+
+For Windows the default should be something like this:  
 ```SUMO_HOME = r"C:\Program Files (x86)\Eclipse\Sumo"```
+
+**In general, run in terminal ```echo $SUMO_HOME```** should provide the installation path to be used in the code
+
+### Python 3 Libraries
+
+Jupyter Notebook, os, time, numpy, matplotlib, scipy, statsmodels, operator, imageio 
+
+### Performance NOTE
+
+Please, consider that running all the experiments takes several hours (i.e. around **5 h for 40 runs in the same network for just one setting**) in a CPU Intel Core i7-4700MQ at 2.40 GHz and 20 Gb of RAM.  
+No example data is provided because it exceeds the repository capabilities. Allocate about 130 Gb of memory in a hard drive if you want to run all the experiments. If you plan to run just one setting (i.e. microscopic, or one of the mesoscopic settings) for one network, you would need about 10 Gb of memory.  
+Just be patient
 
 ### Contents of repository folders
 
